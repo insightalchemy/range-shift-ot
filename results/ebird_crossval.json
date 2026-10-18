@@ -1,0 +1,35 @@
+{
+  "per_species": [
+    {
+      "aou": "07550",
+      "species": "Wood Thrush",
+      "spearman_rho": 0.8827170140400011,
+      "p": 0.0
+    },
+    {
+      "aou": "06220",
+      "species": "Loggerhead Shrike",
+      "spearman_rho": 0.6575157825693989,
+      "p": 8.560382432598585e-137
+    },
+    {
+      "aou": "04090",
+      "species": "Red-bellied Woodpecker",
+      "spearman_rho": 0.8096896757002151,
+      "p": 1.0411020751024514e-255
+    },
+    {
+      "aou": "07180",
+      "species": "Carolina Wren",
+      "spearman_rho": 0.9208747644636355,
+      "p": 0.0
+    },
+    {
+      "aou": "05010",
+      "species": "Eastern Meadowlark",
+      "spearman_rho": 0.8181521150070201,
+      "p": 2.027293707950194e-265
+    }
+  ],
+  "mean_spearman_rho": 0.8177898703560542
+}

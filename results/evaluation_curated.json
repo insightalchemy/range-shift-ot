@@ -1,0 +1,527 @@
+{
+  "config": "curated",
+  "beta": [
+    1.0,
+    2.6798224449157715,
+    1.5234054327011108
+  ],
+  "ratio": 1.7590999603271484,
+  "n_train": 8,
+  "n_test": 5,
+  "win_counts": {
+    "persistence": {
+      "wins": 3,
+      "n": 5,
+      "sign_test_p": 0.5
+    },
+    "sdm_only": {
+      "wins": 5,
+      "n": 5,
+      "sign_test_p": 0.03125
+    },
+    "uniform_cost_ot": {
+      "wins": 5,
+      "n": 5,
+      "sign_test_p": 0.03125
+    },
+    "climate_velocity": {
+      "wins": 5,
+      "n": 5,
+      "sign_test_p": 0.03125
+    }
+  },
+  "win_counts_by_metric": {
+    "wasserstein_m": {
+      "persistence": {
+        "wins": 3,
+        "n": 5
+      },
+      "sdm_only": {
+        "wins": 5,
+        "n": 5
+      },
+      "uniform_cost_ot": {
+        "wins": 5,
+        "n": 5
+      },
+      "climate_velocity": {
+        "wins": 5,
+        "n": 5
+      }
+    },
+    "centroid_shift_m": {
+      "persistence": {
+        "wins": 3,
+        "n": 5
+      },
+      "sdm_only": {
+        "wins": 5,
+        "n": 5
+      },
+      "uniform_cost_ot": {
+        "wins": 4,
+        "n": 5
+      },
+      "climate_velocity": {
+        "wins": 5,
+        "n": 5
+      }
+    },
+    "northern_half_mass_error": {
+      "persistence": {
+        "wins": 3,
+        "n": 5
+      },
+      "sdm_only": {
+        "wins": 5,
+        "n": 5
+      },
+      "uniform_cost_ot": {
+        "wins": 4,
+        "n": 5
+      },
+      "climate_velocity": {
+        "wins": 5,
+        "n": 5
+      }
+    },
+    "schoeners_d": {
+      "persistence": {
+        "wins": 2,
+        "n": 5
+      },
+      "sdm_only": {
+        "wins": 5,
+        "n": 5
+      },
+      "uniform_cost_ot": {
+        "wins": 5,
+        "n": 5
+      },
+      "climate_velocity": {
+        "wins": 5,
+        "n": 5
+      }
+    }
+  },
+  "percent_reduction_vs_uniform": {
+    "mean": 23.563371452087427,
+    "median": 15.412281545526877,
+    "q25": 13.158585138708617,
+    "q75": 36.22559170685324,
+    "min": 10.52230638524643,
+    "max": 42.49809248410197,
+    "n_positive": 5,
+    "n": 5,
+    "per_species": {
+      "07550": 10.52230638524643,
+      "06220": 15.412281545526877,
+      "04090": 42.49809248410197,
+      "07180": 36.22559170685324,
+      "05010": 13.158585138708617
+    }
+  },
+  "shift_split": {
+    "threshold": 0.02,
+    "expanding": {
+      "n": 3,
+      "species": [
+        "04090",
+        "07180",
+        "05010"
+      ],
+      "wins_vs_persistence": 2
+    },
+    "contracting": {
+      "n": 1,
+      "species": [
+        "06220"
+      ],
+      "wins_vs_persistence": 0
+    },
+    "stable": {
+      "n": 1,
+      "species": [
+        "07550"
+      ],
+      "wins_vs_persistence": 1
+    }
+  },
+  "cost_to_expand": {
+    "04090": {
+      "n_expansion_cells": 583,
+      "mass_into_expansion_cells": 0.443069726228714,
+      "cost_to_expand": 0.3719978332519531
+    },
+    "07180": {
+      "n_expansion_cells": 501,
+      "mass_into_expansion_cells": 0.427131712436676,
+      "cost_to_expand": 0.4661612808704376
+    }
+  },
+  "rbwo_lower_than_carw": true,
+  "northern_half_mass": {
+    "07550": {
+      "t0": 0.5594822638340702,
+      "obs": 0.5711400858435809,
+      "sdm": 0.609822087953944,
+      "learned": 0.566381099861303,
+      "shift": 0.01165782200951071
+    },
+    "06220": {
+      "t0": 0.09832408734291676,
+      "obs": 0.05735553312115371,
+      "sdm": 0.22964433336498757,
+      "learned": 0.1450584222378346,
+      "shift": -0.04096855422176304
+    },
+    "04090": {
+      "t0": 0.26147415038212785,
+      "obs": 0.3383885901321264,
+      "sdm": 0.5093855032092733,
+      "learned": 0.3548653745220349,
+      "shift": 0.07691443974999856
+    },
+    "07180": {
+      "t0": 0.14184532768695135,
+      "obs": 0.19469542093293057,
+      "sdm": 0.44178047949118976,
+      "learned": 0.2287339286011158,
+      "shift": 0.052850093245979224
+    },
+    "05010": {
+      "t0": 0.35486439918531687,
+      "obs": 0.3873081736446693,
+      "sdm": 0.5282740321563324,
+      "learned": 0.4314824720966044,
+      "shift": 0.032443774459352426
+    }
+  },
+  "signed_bias": {
+    "Wood Thrush": {
+      "persistence": -0.01165782200951071,
+      "sdm_only": 0.0386820021103631,
+      "learned_cost_ot": -0.0047589859822778635
+    },
+    "Loggerhead Shrike": {
+      "persistence": 0.04096855422176304,
+      "sdm_only": 0.17228880024383386,
+      "learned_cost_ot": 0.0877028891166809
+    },
+    "Red-bellied Woodpecker": {
+      "persistence": -0.07691443974999856,
+      "sdm_only": 0.17099691307714693,
+      "learned_cost_ot": 0.016476784389908516
+    },
+    "Carolina Wren": {
+      "persistence": -0.052850093245979224,
+      "sdm_only": 0.24708505855825919,
+      "learned_cost_ot": 0.034038507668185225
+    },
+    "Eastern Meadowlark": {
+      "persistence": -0.032443774459352426,
+      "sdm_only": 0.1409658585116631,
+      "learned_cost_ot": 0.0441742984519351
+    }
+  },
+  "rows": [
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 109231.9984221949,
+      "centroid_shift_m": 76957.15491622411,
+      "northern_half_mass_error": 0.004758983751450452,
+      "schoeners_d": 0.6966461689304427
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "persistence",
+      "wasserstein_m": 139151.24949532788,
+      "centroid_shift_m": 133203.63201764203,
+      "northern_half_mass_error": 0.011657878133301214,
+      "schoeners_d": 0.7193719412109436
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "sdm_only",
+      "wasserstein_m": 207629.86668786794,
+      "centroid_shift_m": 151607.58962009643,
+      "northern_half_mass_error": 0.038681974472610126,
+      "schoeners_d": 0.580110307276136
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 122077.35135920416,
+      "centroid_shift_m": 66143.35834661413,
+      "northern_half_mass_error": 0.002844770811244679,
+      "schoeners_d": 0.6477971824271417
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "climate_velocity",
+      "wasserstein_m": 319256.3929807801,
+      "centroid_shift_m": 290715.1072982967,
+      "northern_half_mass_error": 0.10980166300763239,
+      "schoeners_d": 0.20480953773865007
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 166236.1669713862,
+      "centroid_shift_m": 148667.07017387892,
+      "northern_half_mass_error": 0.08770289183080587,
+      "schoeners_d": 0.4679995248274198
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "persistence",
+      "wasserstein_m": 132477.26341813878,
+      "centroid_shift_m": 62292.87552845514,
+      "northern_half_mass_error": 0.0409685483080127,
+      "schoeners_d": 0.5255978944247662
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "sdm_only",
+      "wasserstein_m": 305259.14594883536,
+      "centroid_shift_m": 286155.1351120666,
+      "northern_half_mass_error": 0.17228880071753858,
+      "schoeners_d": 0.3599315702889637
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 196525.1812068415,
+      "centroid_shift_m": 179168.85680109542,
+      "northern_half_mass_error": 0.10173686170256088,
+      "schoeners_d": 0.413678979603462
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "climate_velocity",
+      "wasserstein_m": 235745.75745548232,
+      "centroid_shift_m": 171382.9312318863,
+      "northern_half_mass_error": 0.10387942363423835,
+      "schoeners_d": 0.16787979560627286
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 43162.40227215292,
+      "centroid_shift_m": 32962.67100871592,
+      "northern_half_mass_error": 0.01647680291309317,
+      "schoeners_d": 0.8165231440959378
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "persistence",
+      "wasserstein_m": 120500.178549824,
+      "centroid_shift_m": 112633.88473537676,
+      "northern_half_mass_error": 0.07691443988602636,
+      "schoeners_d": 0.7778174206893637
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "sdm_only",
+      "wasserstein_m": 235134.49739571818,
+      "centroid_shift_m": 224288.36396673476,
+      "northern_half_mass_error": 0.17099691612104279,
+      "schoeners_d": 0.7061645221129087
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 75062.55729032893,
+      "centroid_shift_m": 68988.0491143022,
+      "northern_half_mass_error": 0.047563425065057396,
+      "schoeners_d": 0.7774063635860127
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "climate_velocity",
+      "wasserstein_m": 171122.5120643635,
+      "centroid_shift_m": 116241.71244530006,
+      "northern_half_mass_error": 0.05469684789418333,
+      "schoeners_d": 0.267486576614115
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 80940.45192790113,
+      "centroid_shift_m": 65662.8245585718,
+      "northern_half_mass_error": 0.0340385079060424,
+      "schoeners_d": 0.7954265389374027
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "persistence",
+      "wasserstein_m": 82391.53388808096,
+      "centroid_shift_m": 73964.71046996054,
+      "northern_half_mass_error": 0.052850083544414145,
+      "schoeners_d": 0.7526188377146388
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "sdm_only",
+      "wasserstein_m": 296685.8003057744,
+      "centroid_shift_m": 283093.1233047711,
+      "northern_half_mass_error": 0.24708506935286992,
+      "schoeners_d": 0.6113888770459303
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 126916.82148715293,
+      "centroid_shift_m": 113611.05344921463,
+      "northern_half_mass_error": 0.08895287445517322,
+      "schoeners_d": 0.7460460787786225
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "climate_velocity",
+      "wasserstein_m": 188764.14027624912,
+      "centroid_shift_m": 157287.11845491105,
+      "northern_half_mass_error": 0.09334156858892731,
+      "schoeners_d": 0.28388979983409246
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 245912.25791937642,
+      "centroid_shift_m": 203722.68564889062,
+      "northern_half_mass_error": 0.044174247755356666,
+      "schoeners_d": 0.6103164316198809
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "persistence",
+      "wasserstein_m": 101992.12257129396,
+      "centroid_shift_m": 69600.3222095205,
+      "northern_half_mass_error": 0.032443805417331606,
+      "schoeners_d": 0.7236929613436277
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "sdm_only",
+      "wasserstein_m": 448838.2006617808,
+      "centroid_shift_m": 396989.47666812706,
+      "northern_half_mass_error": 0.14096585695182567,
+      "schoeners_d": 0.46008667308421314
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 283173.94219355256,
+      "centroid_shift_m": 232592.82836921545,
+      "northern_half_mass_error": 0.06082473553542722,
+      "schoeners_d": 0.5493736945791596
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "climate_velocity",
+      "wasserstein_m": 307936.73959601525,
+      "centroid_shift_m": 285693.60957540164,
+      "northern_half_mass_error": 0.19203061356271728,
+      "schoeners_d": 0.23754279635592734
+    }
+  ],
+  "group_wins_vs_persistence": {
+    "expanding_stable": {
+      "wasserstein_m": {
+        "wins_vs_persistence": 3,
+        "n": 3
+      },
+      "centroid_shift_m": {
+        "wins_vs_persistence": 3,
+        "n": 3
+      },
+      "northern_half_mass_error": {
+        "wins_vs_persistence": 3,
+        "n": 3
+      },
+      "schoeners_d": {
+        "wins_vs_persistence": 2,
+        "n": 3
+      }
+    },
+    "contracting": {
+      "wasserstein_m": {
+        "wins_vs_persistence": 0,
+        "n": 2
+      },
+      "centroid_shift_m": {
+        "wins_vs_persistence": 0,
+        "n": 2
+      },
+      "northern_half_mass_error": {
+        "wins_vs_persistence": 0,
+        "n": 2
+      },
+      "schoeners_d": {
+        "wins_vs_persistence": 0,
+        "n": 2
+      }
+    }
+  },
+  "ebird_crossval": {
+    "per_species": [
+      {
+        "aou": "07550",
+        "species": "Wood Thrush",
+        "spearman_rho": 0.8827170140400011,
+        "p": 0.0
+      },
+      {
+        "aou": "06220",
+        "species": "Loggerhead Shrike",
+        "spearman_rho": 0.6575157825693989,
+        "p": 8.560382432598585e-137
+      },
+      {
+        "aou": "04090",
+        "species": "Red-bellied Woodpecker",
+        "spearman_rho": 0.8096896757002151,
+        "p": 1.0411020751024514e-255
+      },
+      {
+        "aou": "07180",
+        "species": "Carolina Wren",
+        "spearman_rho": 0.9208747644636355,
+        "p": 0.0
+      },
+      {
+        "aou": "05010",
+        "species": "Eastern Meadowlark",
+        "spearman_rho": 0.8181521150070201,
+        "p": 2.027293707950194e-265
+      }
+    ],
+    "mean_spearman_rho": 0.8177898703560542
+  }
+}

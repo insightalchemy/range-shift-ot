@@ -1,0 +1,2106 @@
+{
+  "config": "unbiased",
+  "beta": [
+    1.0,
+    8.029749870300293,
+    6.886147499084473
+  ],
+  "ratio": 1.1660728454589844,
+  "n_train": 68,
+  "n_test": 33,
+  "win_counts": {
+    "persistence": {
+      "wins": 7,
+      "n": 33,
+      "sign_test_p": 0.9998379682656378
+    },
+    "sdm_only": {
+      "wins": 33,
+      "n": 33,
+      "sign_test_p": 1.1641532182693481e-10
+    },
+    "uniform_cost_ot": {
+      "wins": 33,
+      "n": 33,
+      "sign_test_p": 1.1641532182693481e-10
+    },
+    "climate_velocity": {
+      "wins": 30,
+      "n": 33,
+      "sign_test_p": 7.005874067544937e-07
+    }
+  },
+  "win_counts_by_metric": {
+    "wasserstein_m": {
+      "persistence": {
+        "wins": 7,
+        "n": 33
+      },
+      "sdm_only": {
+        "wins": 33,
+        "n": 33
+      },
+      "uniform_cost_ot": {
+        "wins": 33,
+        "n": 33
+      },
+      "climate_velocity": {
+        "wins": 30,
+        "n": 33
+      }
+    },
+    "centroid_shift_m": {
+      "persistence": {
+        "wins": 6,
+        "n": 33
+      },
+      "sdm_only": {
+        "wins": 33,
+        "n": 33
+      },
+      "uniform_cost_ot": {
+        "wins": 26,
+        "n": 33
+      },
+      "climate_velocity": {
+        "wins": 27,
+        "n": 33
+      }
+    },
+    "northern_half_mass_error": {
+      "persistence": {
+        "wins": 11,
+        "n": 33
+      },
+      "sdm_only": {
+        "wins": 32,
+        "n": 33
+      },
+      "uniform_cost_ot": {
+        "wins": 28,
+        "n": 33
+      },
+      "climate_velocity": {
+        "wins": 28,
+        "n": 33
+      }
+    },
+    "schoeners_d": {
+      "persistence": {
+        "wins": 19,
+        "n": 33
+      },
+      "sdm_only": {
+        "wins": 33,
+        "n": 33
+      },
+      "uniform_cost_ot": {
+        "wins": 33,
+        "n": 33
+      },
+      "climate_velocity": {
+        "wins": 33,
+        "n": 33
+      }
+    }
+  },
+  "percent_reduction_vs_uniform": {
+    "mean": 16.704261200770965,
+    "median": 14.448014603402843,
+    "q25": 9.13286141838624,
+    "q75": 19.464906673212003,
+    "min": 0.07364744490732356,
+    "max": 44.80759353392145,
+    "n_positive": 33,
+    "n": 33,
+    "per_species": {
+      "05010": 14.298768907262208,
+      "07550": 10.6522440543907,
+      "07180": 40.484537167235004,
+      "06220": 18.536289606636878,
+      "04090": 44.80759353392145,
+      "03260": 38.01295323495446,
+      "04940": 20.690755218471292,
+      "06100": 30.17873247508286,
+      "03750": 15.154250632164501,
+      "06730": 5.054884017559163,
+      "03680": 0.3866611494974629,
+      "01960": 19.464906673212003,
+      "06190": 19.056258524419242,
+      "03600": 0.07364744490732356,
+      "05070": 14.274810481513448,
+      "01440": 11.345835904688908,
+      "05810": 14.448014603402843,
+      "05970": 12.781196344868818,
+      "01320": 19.18325154739977,
+      "03930": 23.06239210056599,
+      "04280": 10.323152577031625,
+      "04560": 7.2571528919253945,
+      "06280": 9.13286141838624,
+      "07030": 32.88543639886306,
+      "02010": 16.404439506427458,
+      "05290": 6.3243541972220445,
+      "05110": 6.62358205319095,
+      "04880": 6.163671846511959,
+      "04520": 16.470316203544684,
+      "06240": 28.642016887434036,
+      "03160": 17.704585833134946,
+      "03940": 13.98308371448002,
+      "04230": 7.377982475135162
+    }
+  },
+  "shift_split": {
+    "threshold": 0.02,
+    "expanding": {
+      "n": 12,
+      "species": [
+        "05010",
+        "07180",
+        "04090",
+        "06100",
+        "03680",
+        "01440",
+        "05970",
+        "03930",
+        "02010",
+        "05110",
+        "03160",
+        "04230"
+      ],
+      "wins_vs_persistence": 4
+    },
+    "contracting": {
+      "n": 6,
+      "species": [
+        "06220",
+        "03750",
+        "06730",
+        "03600",
+        "04560",
+        "04880"
+      ],
+      "wins_vs_persistence": 0
+    },
+    "stable": {
+      "n": 15,
+      "species": [
+        "07550",
+        "03260",
+        "04940",
+        "01960",
+        "06190",
+        "05070",
+        "05810",
+        "01320",
+        "04280",
+        "06280",
+        "07030",
+        "05290",
+        "04520",
+        "06240",
+        "03940"
+      ],
+      "wins_vs_persistence": 3
+    }
+  },
+  "cost_to_expand": {
+    "07180": {
+      "n_expansion_cells": 501,
+      "mass_into_expansion_cells": 0.4045950174331665,
+      "cost_to_expand": 0.2879886031150818
+    },
+    "04090": {
+      "n_expansion_cells": 583,
+      "mass_into_expansion_cells": 0.4255260229110718,
+      "cost_to_expand": 0.23128728568553925
+    }
+  },
+  "rbwo_lower_than_carw": true,
+  "northern_half_mass": {
+    "05010": {
+      "t0": 0.35486439918531687,
+      "obs": 0.3873081736446693,
+      "sdm": 0.5282740321563324,
+      "learned": 0.43080764333274146,
+      "shift": 0.032443774459352426
+    },
+    "07550": {
+      "t0": 0.5594822638340702,
+      "obs": 0.5711400858435809,
+      "sdm": 0.609822087953944,
+      "learned": 0.5668970168656102,
+      "shift": 0.01165782200951071
+    },
+    "07180": {
+      "t0": 0.14184532768695135,
+      "obs": 0.19469542093293057,
+      "sdm": 0.44178047949118976,
+      "learned": 0.22509884578848374,
+      "shift": 0.052850093245979224
+    },
+    "06220": {
+      "t0": 0.09832408734291676,
+      "obs": 0.05735553312115371,
+      "sdm": 0.22964433336498757,
+      "learned": 0.1421626540267087,
+      "shift": -0.04096855422176304
+    },
+    "04090": {
+      "t0": 0.26147415038212785,
+      "obs": 0.3383885901321264,
+      "sdm": 0.5093855032092733,
+      "learned": 0.35094196382697884,
+      "shift": 0.07691443974999856
+    },
+    "03260": {
+      "t0": 0.049081062783443485,
+      "obs": 0.06257753093177598,
+      "sdm": 0.16422031102135168,
+      "learned": 0.08429854049879847,
+      "shift": 0.013496468148332497
+    },
+    "04940": {
+      "t0": 0.9998977084360376,
+      "obs": 0.9997227398052928,
+      "sdm": 0.9988008027551416,
+      "learned": 0.9997294998565232,
+      "shift": -0.0001749686307448428
+    },
+    "06100": {
+      "t0": 0.05918603405370959,
+      "obs": 0.08499196748925897,
+      "sdm": 0.29130482459682944,
+      "learned": 0.11278956145406187,
+      "shift": 0.025805933435549377
+    },
+    "03750": {
+      "t0": 0.4425548028812045,
+      "obs": 0.376579206524184,
+      "sdm": 0.515552181735984,
+      "learned": 0.4866695162522774,
+      "shift": -0.06597559635702055
+    },
+    "06730": {
+      "t0": 0.2725609691005957,
+      "obs": 0.21543466773073305,
+      "sdm": 0.47643809562644335,
+      "learned": 0.3497478228818577,
+      "shift": -0.05712630136986263
+    },
+    "03680": {
+      "t0": 0.1737840347486781,
+      "obs": 0.2978222926321905,
+      "sdm": 0.4295878711450314,
+      "learned": 0.2692037194828458,
+      "shift": 0.12403825788351241
+    },
+    "01960": {
+      "t0": 0.06811713670322206,
+      "obs": 0.07221913588728057,
+      "sdm": 0.13812311397686017,
+      "learned": 0.07975767622678376,
+      "shift": 0.0041019991840585135
+    },
+    "06190": {
+      "t0": 0.9284895936325483,
+      "obs": 0.9341789954960404,
+      "sdm": 0.9078567441372343,
+      "learned": 0.9226351906927448,
+      "shift": 0.005689401863492094
+    },
+    "03600": {
+      "t0": 0.7693804490627372,
+      "obs": 0.7086608023382723,
+      "sdm": 0.8084721298655495,
+      "learned": 0.8339361808175454,
+      "shift": -0.06071964672446484
+    },
+    "05070": {
+      "t0": 0.8939385229787149,
+      "obs": 0.8917842726878007,
+      "sdm": 0.8654411186871585,
+      "learned": 0.8947683972364757,
+      "shift": -0.002154250290914206
+    },
+    "01440": {
+      "t0": 0.5909548768831883,
+      "obs": 0.6615749299598974,
+      "sdm": 0.5686350613250397,
+      "learned": 0.5927773451257963,
+      "shift": 0.07062005307670915
+    },
+    "05810": {
+      "t0": 0.9128781583967793,
+      "obs": 0.9191880464409223,
+      "sdm": 0.9002765493704601,
+      "learned": 0.915243006950746,
+      "shift": 0.006309888044143008
+    },
+    "05970": {
+      "t0": 0.13771447210638144,
+      "obs": 0.21365327842431725,
+      "sdm": 0.31061498983291985,
+      "learned": 0.1792220348950685,
+      "shift": 0.07593880631793581
+    },
+    "01320": {
+      "t0": 0.9501352187626253,
+      "obs": 0.9440429080405011,
+      "sdm": 0.8150729989865795,
+      "learned": 0.9097861727350391,
+      "shift": -0.006092310722124239
+    },
+    "03930": {
+      "t0": 0.7042383842272102,
+      "obs": 0.7558851585927187,
+      "sdm": 0.691965654357773,
+      "learned": 0.7028610969355213,
+      "shift": 0.05164677436550846
+    },
+    "04280": {
+      "t0": 0.4453937590806163,
+      "obs": 0.4628832806411083,
+      "sdm": 0.5845116362979752,
+      "learned": 0.5084301056714722,
+      "shift": 0.017489521560491994
+    },
+    "04560": {
+      "t0": 0.5965815550716798,
+      "obs": 0.5308879126350803,
+      "sdm": 0.7242529627401382,
+      "learned": 0.6625893590735359,
+      "shift": -0.06569364243659948
+    },
+    "06280": {
+      "t0": 0.41568427856691414,
+      "obs": 0.43256518306588987,
+      "sdm": 0.5161016750062117,
+      "learned": 0.44845354045623376,
+      "shift": 0.016880904498975724
+    },
+    "07030": {
+      "t0": 0.1115925129910238,
+      "obs": 0.11217401190697274,
+      "sdm": 0.3791423224647019,
+      "learned": 0.18833920330666487,
+      "shift": 0.0005814989159489414
+    },
+    "02010": {
+      "t0": 0.27129697483906057,
+      "obs": 0.3113515485965763,
+      "sdm": 0.4668255604119622,
+      "learned": 0.3582170348623208,
+      "shift": 0.040054573757515755
+    },
+    "05290": {
+      "t0": 0.8277867736978806,
+      "obs": 0.8244243929748336,
+      "sdm": 0.7802540753909852,
+      "learned": 0.8127678106102394,
+      "shift": -0.003362380723046954
+    },
+    "05110": {
+      "t0": 0.6648063485115472,
+      "obs": 0.7613230923407173,
+      "sdm": 0.5527505344361998,
+      "learned": 0.615245817869436,
+      "shift": 0.09651674382917008
+    },
+    "04880": {
+      "t0": 0.507189926403953,
+      "obs": 0.4602804652558916,
+      "sdm": 0.5658434380547988,
+      "learned": 0.5371025577587716,
+      "shift": -0.04690946114806138
+    },
+    "04520": {
+      "t0": 0.3310852133563458,
+      "obs": 0.33398888122246717,
+      "sdm": 0.5526416169996082,
+      "learned": 0.4410148000151821,
+      "shift": 0.0029036678661213955
+    },
+    "06240": {
+      "t0": 0.7016706042750229,
+      "obs": 0.7130476359066051,
+      "sdm": 0.5894870500342222,
+      "learned": 0.6432596309932705,
+      "shift": 0.011377031631582213
+    },
+    "03160": {
+      "t0": 0.4816990193676247,
+      "obs": 0.5059950748768642,
+      "sdm": 0.5328323207213543,
+      "learned": 0.5073288607236464,
+      "shift": 0.024296055509239523
+    },
+    "03940": {
+      "t0": 0.46508755277136515,
+      "obs": 0.47732180479579256,
+      "sdm": 0.563995878721471,
+      "learned": 0.5086715052402724,
+      "shift": 0.012234252024427406
+    },
+    "04230": {
+      "t0": 0.3789442919269277,
+      "obs": 0.4882369610359092,
+      "sdm": 0.5302516908850521,
+      "learned": 0.45554994174563035,
+      "shift": 0.1092926691089815
+    }
+  },
+  "signed_bias": {
+    "Eastern Meadowlark": {
+      "persistence": -0.032443774459352426,
+      "sdm_only": 0.1409658585116631,
+      "learned_cost_ot": 0.04349946968807217
+    },
+    "Wood Thrush": {
+      "persistence": -0.01165782200951071,
+      "sdm_only": 0.0386820021103631,
+      "learned_cost_ot": -0.004243068977970665
+    },
+    "Carolina Wren": {
+      "persistence": -0.052850093245979224,
+      "sdm_only": 0.24708505855825919,
+      "learned_cost_ot": 0.03040342485555317
+    },
+    "Loggerhead Shrike": {
+      "persistence": 0.04096855422176304,
+      "sdm_only": 0.17228880024383386,
+      "learned_cost_ot": 0.08480712090555498
+    },
+    "Red-bellied Woodpecker": {
+      "persistence": -0.07691443974999856,
+      "sdm_only": 0.17099691307714693,
+      "learned_cost_ot": 0.012553373694852432
+    },
+    "Black Vulture": {
+      "persistence": -0.013496468148332497,
+      "sdm_only": 0.1016427800895757,
+      "learned_cost_ot": 0.021721009567022484
+    },
+    "Bobolink": {
+      "persistence": 0.0001749686307448428,
+      "sdm_only": -0.0009219370501512003,
+      "learned_cost_ot": 6.760051230347841e-06
+    },
+    "Summer Tanager": {
+      "persistence": -0.025805933435549377,
+      "sdm_only": 0.20631285710757047,
+      "learned_cost_ot": 0.0277975939648029
+    },
+    "Great Horned Owl": {
+      "persistence": 0.06597559635702055,
+      "sdm_only": 0.13897297521180008,
+      "learned_cost_ot": 0.11009030972809342
+    },
+    "Prairie Warbler": {
+      "persistence": 0.05712630136986263,
+      "sdm_only": 0.2610034278957103,
+      "learned_cost_ot": 0.13431315515112463
+    },
+    "Barred Owl": {
+      "persistence": -0.12403825788351241,
+      "sdm_only": 0.13176557851284088,
+      "learned_cost_ot": -0.028618573149344684
+    },
+    "Great Egret": {
+      "persistence": -0.0041019991840585135,
+      "sdm_only": 0.0659039780895796,
+      "learned_cost_ot": 0.007538540339503186
+    },
+    "Cedar Waxwing": {
+      "persistence": -0.005689401863492094,
+      "sdm_only": -0.02632225135880617,
+      "learned_cost_ot": -0.011543804803295643
+    },
+    "American Kestrel": {
+      "persistence": 0.06071964672446484,
+      "sdm_only": 0.09981132752727717,
+      "learned_cost_ot": 0.12527537847927306
+    },
+    "Baltimore Oriole": {
+      "persistence": 0.002154250290914206,
+      "sdm_only": -0.026343154000642244,
+      "learned_cost_ot": 0.0029841245486750267
+    },
+    "Wood Duck": {
+      "persistence": -0.07062005307670915,
+      "sdm_only": -0.0929398686348577,
+      "learned_cost_ot": -0.06879758483410114
+    },
+    "Song Sparrow": {
+      "persistence": -0.006309888044143008,
+      "sdm_only": -0.018911497070462246,
+      "learned_cost_ot": -0.0039450394901763275
+    },
+    "Blue Grosbeak": {
+      "persistence": -0.07593880631793581,
+      "sdm_only": 0.0969617114086026,
+      "learned_cost_ot": -0.034431243529248756
+    },
+    "Mallard": {
+      "persistence": 0.006092310722124239,
+      "sdm_only": -0.12896990905392158,
+      "learned_cost_ot": -0.034256735305461916
+    },
+    "Hairy Woodpecker": {
+      "persistence": -0.05164677436550846,
+      "sdm_only": -0.06391950423494563,
+      "learned_cost_ot": -0.05302406165719731
+    },
+    "Ruby-throated Hummingbird": {
+      "persistence": -0.017489521560491994,
+      "sdm_only": 0.12162835565686692,
+      "learned_cost_ot": 0.04554682503036389
+    },
+    "Eastern Phoebe": {
+      "persistence": 0.06569364243659948,
+      "sdm_only": 0.1933650501050579,
+      "learned_cost_ot": 0.1317014464384556
+    },
+    "Yellow-throated Vireo": {
+      "persistence": -0.016880904498975724,
+      "sdm_only": 0.08353649194032187,
+      "learned_cost_ot": 0.015888357390343888
+    },
+    "Northern Mockingbird": {
+      "persistence": -0.0005814989159489414,
+      "sdm_only": 0.2669683105577292,
+      "learned_cost_ot": 0.07616519139969213
+    },
+    "Green Heron": {
+      "persistence": -0.040054573757515755,
+      "sdm_only": 0.1554740118153859,
+      "learned_cost_ot": 0.046865486265744494
+    },
+    "American Goldfinch": {
+      "persistence": 0.003362380723046954,
+      "sdm_only": -0.04417031758384837,
+      "learned_cost_ot": -0.011656582364594215
+    },
+    "Common Grackle": {
+      "persistence": -0.09651674382917008,
+      "sdm_only": -0.20857255790451745,
+      "learned_cost_ot": -0.14607727447128127
+    },
+    "American Crow": {
+      "persistence": 0.04690946114806138,
+      "sdm_only": 0.10556297279890714,
+      "learned_cost_ot": 0.07682209250287997
+    },
+    "Great Crested Flycatcher": {
+      "persistence": -0.0029036678661213955,
+      "sdm_only": 0.21865273577714106,
+      "learned_cost_ot": 0.10702591879271495
+    },
+    "Red-eyed Vireo": {
+      "persistence": -0.011377031631582213,
+      "sdm_only": -0.12356058587238294,
+      "learned_cost_ot": -0.06978800491333459
+    },
+    "Mourning Dove": {
+      "persistence": -0.024296055509239523,
+      "sdm_only": 0.0268372458444901,
+      "learned_cost_ot": 0.0013337858467821206
+    },
+    "Downy Woodpecker": {
+      "persistence": -0.012234252024427406,
+      "sdm_only": 0.08667407392567839,
+      "learned_cost_ot": 0.03134970044447982
+    },
+    "Chimney Swift": {
+      "persistence": -0.1092926691089815,
+      "sdm_only": 0.042014729849142896,
+      "learned_cost_ot": -0.03268701929027884
+    }
+  },
+  "rows": [
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 242683.5545937122,
+      "centroid_shift_m": 202500.26859856155,
+      "northern_half_mass_error": 0.04349944634187136,
+      "schoeners_d": 0.6314300142249551
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "persistence",
+      "wasserstein_m": 101992.12257129396,
+      "centroid_shift_m": 69600.3222095205,
+      "northern_half_mass_error": 0.032443805417331606,
+      "schoeners_d": 0.7236929613436277
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "sdm_only",
+      "wasserstein_m": 448838.2006617808,
+      "centroid_shift_m": 396989.47666812706,
+      "northern_half_mass_error": 0.14096585695182567,
+      "schoeners_d": 0.46008667308421314
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 283173.94219355256,
+      "centroid_shift_m": 232592.82836921545,
+      "northern_half_mass_error": 0.06082473553542722,
+      "schoeners_d": 0.5493736945791596
+    },
+    {
+      "species": "Eastern Meadowlark",
+      "aou": "05010",
+      "method": "climate_velocity",
+      "wasserstein_m": 307936.73959601525,
+      "centroid_shift_m": 285693.60957540164,
+      "northern_half_mass_error": 0.19203061356271728,
+      "schoeners_d": 0.23754279635592734
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 109073.37395728569,
+      "centroid_shift_m": 82616.76529950116,
+      "northern_half_mass_error": 0.0042431140581347115,
+      "schoeners_d": 0.709943945421769
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "persistence",
+      "wasserstein_m": 139151.24949532788,
+      "centroid_shift_m": 133203.63201764203,
+      "northern_half_mass_error": 0.011657878133301214,
+      "schoeners_d": 0.7193719412109436
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "sdm_only",
+      "wasserstein_m": 207629.86668786794,
+      "centroid_shift_m": 151607.58962009643,
+      "northern_half_mass_error": 0.038681974472610126,
+      "schoeners_d": 0.580110307276136
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 122077.35135920416,
+      "centroid_shift_m": 66143.35834661413,
+      "northern_half_mass_error": 0.002844770811244679,
+      "schoeners_d": 0.6477971824271417
+    },
+    {
+      "species": "Wood Thrush",
+      "aou": "07550",
+      "method": "climate_velocity",
+      "wasserstein_m": 319256.3929807801,
+      "centroid_shift_m": 290715.1072982967,
+      "northern_half_mass_error": 0.10980166300763239,
+      "schoeners_d": 0.20480953773865007
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 75535.1337207132,
+      "centroid_shift_m": 60027.444032835214,
+      "northern_half_mass_error": 0.030403435613038127,
+      "schoeners_d": 0.7991417604643599
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "persistence",
+      "wasserstein_m": 82391.53388808096,
+      "centroid_shift_m": 73964.71046996054,
+      "northern_half_mass_error": 0.052850083544414145,
+      "schoeners_d": 0.7526188377146388
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "sdm_only",
+      "wasserstein_m": 296685.8003057744,
+      "centroid_shift_m": 283093.1233047711,
+      "northern_half_mass_error": 0.24708506935286992,
+      "schoeners_d": 0.6113888770459303
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 126916.82148715293,
+      "centroid_shift_m": 113611.05344921463,
+      "northern_half_mass_error": 0.08895287445517322,
+      "schoeners_d": 0.7460460787786225
+    },
+    {
+      "species": "Carolina Wren",
+      "aou": "07180",
+      "method": "climate_velocity",
+      "wasserstein_m": 188764.14027624912,
+      "centroid_shift_m": 157287.11845491105,
+      "northern_half_mass_error": 0.09334156858892731,
+      "schoeners_d": 0.28388979983409246
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 160096.70446837344,
+      "centroid_shift_m": 141642.7913451155,
+      "northern_half_mass_error": 0.08480712159767637,
+      "schoeners_d": 0.4979051805327728
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "persistence",
+      "wasserstein_m": 132477.26341813878,
+      "centroid_shift_m": 62292.87552845514,
+      "northern_half_mass_error": 0.0409685483080127,
+      "schoeners_d": 0.5255978944247662
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "sdm_only",
+      "wasserstein_m": 305259.14594883536,
+      "centroid_shift_m": 286155.1351120666,
+      "northern_half_mass_error": 0.17228880071753858,
+      "schoeners_d": 0.3599315702889637
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 196525.1812068415,
+      "centroid_shift_m": 179168.85680109542,
+      "northern_half_mass_error": 0.10173686170256088,
+      "schoeners_d": 0.413678979603462
+    },
+    {
+      "species": "Loggerhead Shrike",
+      "aou": "06220",
+      "method": "climate_velocity",
+      "wasserstein_m": 235745.75745548232,
+      "centroid_shift_m": 171382.9312318863,
+      "northern_half_mass_error": 0.10387942363423835,
+      "schoeners_d": 0.16787979560627286
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 41428.83172351142,
+      "centroid_shift_m": 29324.745365427527,
+      "northern_half_mass_error": 0.012553380014032,
+      "schoeners_d": 0.8219362092694551
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "persistence",
+      "wasserstein_m": 120500.178549824,
+      "centroid_shift_m": 112633.88473537676,
+      "northern_half_mass_error": 0.07691443988602636,
+      "schoeners_d": 0.7778174206893637
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "sdm_only",
+      "wasserstein_m": 235134.49739571818,
+      "centroid_shift_m": 224288.36396673476,
+      "northern_half_mass_error": 0.17099691612104279,
+      "schoeners_d": 0.7061645221129087
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 75062.55729032893,
+      "centroid_shift_m": 68988.0491143022,
+      "northern_half_mass_error": 0.047563425065057396,
+      "schoeners_d": 0.7774063635860127
+    },
+    {
+      "species": "Red-bellied Woodpecker",
+      "aou": "04090",
+      "method": "climate_velocity",
+      "wasserstein_m": 171122.5120643635,
+      "centroid_shift_m": 116241.71244530006,
+      "northern_half_mass_error": 0.05469684789418333,
+      "schoeners_d": 0.267486576614115
+    },
+    {
+      "species": "Black Vulture",
+      "aou": "03260",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 84254.09768129271,
+      "centroid_shift_m": 62476.30143578945,
+      "northern_half_mass_error": 0.02172100660218458,
+      "schoeners_d": 0.658171110139627
+    },
+    {
+      "species": "Black Vulture",
+      "aou": "03260",
+      "method": "persistence",
+      "wasserstein_m": 107712.40200776512,
+      "centroid_shift_m": 84807.72937185389,
+      "northern_half_mass_error": 0.013496471652743904,
+      "schoeners_d": 0.565349932715874
+    },
+    {
+      "species": "Black Vulture",
+      "aou": "03260",
+      "method": "sdm_only",
+      "wasserstein_m": 283825.32991301327,
+      "centroid_shift_m": 262495.62079315196,
+      "northern_half_mass_error": 0.10164277877222648,
+      "schoeners_d": 0.5355586116163153
+    },
+    {
+      "species": "Black Vulture",
+      "aou": "03260",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 135922.10321076878,
+      "centroid_shift_m": 115218.0780616276,
+      "northern_half_mass_error": 0.04047513815037669,
+      "schoeners_d": 0.6157639507745511
+    },
+    {
+      "species": "Black Vulture",
+      "aou": "03260",
+      "method": "climate_velocity",
+      "wasserstein_m": 201882.21250533086,
+      "centroid_shift_m": 175229.7754533536,
+      "northern_half_mass_error": 0.027700663944323786,
+      "schoeners_d": 0.22509576060288006
+    },
+    {
+      "species": "Bobolink",
+      "aou": "04940",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 179561.27568326757,
+      "centroid_shift_m": 168139.43800951025,
+      "northern_half_mass_error": 6.832167218528973e-06,
+      "schoeners_d": 0.600173061765805
+    },
+    {
+      "species": "Bobolink",
+      "aou": "04940",
+      "method": "persistence",
+      "wasserstein_m": 111226.78084136534,
+      "centroid_shift_m": 101018.04864523011,
+      "northern_half_mass_error": 0.00017499341779958488,
+      "schoeners_d": 0.6755872534194605
+    },
+    {
+      "species": "Bobolink",
+      "aou": "04940",
+      "method": "sdm_only",
+      "wasserstein_m": 261946.19367008685,
+      "centroid_shift_m": 243803.49783406258,
+      "northern_half_mass_error": 0.0009219097975656787,
+      "schoeners_d": 0.48356900815529347
+    },
+    {
+      "species": "Bobolink",
+      "aou": "04940",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 226406.48789167107,
+      "centroid_shift_m": 215388.8680365742,
+      "northern_half_mass_error": 0.0008798380357087909,
+      "schoeners_d": 0.5230950168745814
+    },
+    {
+      "species": "Bobolink",
+      "aou": "04940",
+      "method": "climate_velocity",
+      "wasserstein_m": 170502.86493595608,
+      "centroid_shift_m": 131378.1282529291,
+      "northern_half_mass_error": 0.0001972316014124953,
+      "schoeners_d": 0.25633791462768074
+    },
+    {
+      "species": "Summer Tanager",
+      "aou": "06100",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 72095.12091540675,
+      "centroid_shift_m": 47138.099566717545,
+      "northern_half_mass_error": 0.027797590801340588,
+      "schoeners_d": 0.7342074042154632
+    },
+    {
+      "species": "Summer Tanager",
+      "aou": "06100",
+      "method": "persistence",
+      "wasserstein_m": 71101.18502943429,
+      "centroid_shift_m": 43514.487538602734,
+      "northern_half_mass_error": 0.02580593182093964,
+      "schoeners_d": 0.6987561994897474
+    },
+    {
+      "species": "Summer Tanager",
+      "aou": "06100",
+      "method": "sdm_only",
+      "wasserstein_m": 204284.9903016683,
+      "centroid_shift_m": 195256.1765494919,
+      "northern_half_mass_error": 0.20631285811500025,
+      "schoeners_d": 0.5803867557601345
+    },
+    {
+      "species": "Summer Tanager",
+      "aou": "06100",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 103256.67732926524,
+      "centroid_shift_m": 79330.03971693243,
+      "northern_half_mass_error": 0.0934801614501791,
+      "schoeners_d": 0.6530820310992002
+    },
+    {
+      "species": "Summer Tanager",
+      "aou": "06100",
+      "method": "climate_velocity",
+      "wasserstein_m": 297826.14323929313,
+      "centroid_shift_m": 285900.06051990367,
+      "northern_half_mass_error": 0.1749763861862619,
+      "schoeners_d": 0.24450933366996752
+    },
+    {
+      "species": "Great Horned Owl",
+      "aou": "03750",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 257423.04399795318,
+      "centroid_shift_m": 238109.4766281632,
+      "northern_half_mass_error": 0.11009032021854775,
+      "schoeners_d": 0.4077947097975123
+    },
+    {
+      "species": "Great Horned Owl",
+      "aou": "03750",
+      "method": "persistence",
+      "wasserstein_m": 178264.71449754713,
+      "centroid_shift_m": 137095.56736630906,
+      "northern_half_mass_error": 0.0659755858804223,
+      "schoeners_d": 0.3969138645237008
+    },
+    {
+      "species": "Great Horned Owl",
+      "aou": "03750",
+      "method": "sdm_only",
+      "wasserstein_m": 387233.7325492038,
+      "centroid_shift_m": 373674.52131665,
+      "northern_half_mass_error": 0.138972985987398,
+      "schoeners_d": 0.348943275756576
+    },
+    {
+      "species": "Great Horned Owl",
+      "aou": "03750",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 303401.22624403465,
+      "centroid_shift_m": 286429.0868172793,
+      "northern_half_mass_error": 0.11402386636513012,
+      "schoeners_d": 0.37502069521422077
+    },
+    {
+      "species": "Great Horned Owl",
+      "aou": "03750",
+      "method": "climate_velocity",
+      "wasserstein_m": 331764.25130377605,
+      "centroid_shift_m": 315455.2925884223,
+      "northern_half_mass_error": 0.2134963032496871,
+      "schoeners_d": 0.16107339209053495
+    },
+    {
+      "species": "Prairie Warbler",
+      "aou": "06730",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 193718.43339411012,
+      "centroid_shift_m": 184968.41698396002,
+      "northern_half_mass_error": 0.1343131734628191,
+      "schoeners_d": 0.5607424565492184
+    },
+    {
+      "species": "Prairie Warbler",
+      "aou": "06730",
+      "method": "persistence",
+      "wasserstein_m": 192711.42251121896,
+      "centroid_shift_m": 176943.02060506822,
+      "northern_half_mass_error": 0.05712631319784575,
+      "schoeners_d": 0.5963975146706554
+    },
+    {
+      "species": "Prairie Warbler",
+      "aou": "06730",
+      "method": "sdm_only",
+      "wasserstein_m": 272871.39113892027,
+      "centroid_shift_m": 254907.20044457514,
+      "northern_half_mass_error": 0.26100342536990717,
+      "schoeners_d": 0.4065413531703024
+    },
+    {
+      "species": "Prairie Warbler",
+      "aou": "06730",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 204032.0151169613,
+      "centroid_shift_m": 185421.02540257346,
+      "northern_half_mass_error": 0.1702718292965715,
+      "schoeners_d": 0.46193957041730527
+    },
+    {
+      "species": "Prairie Warbler",
+      "aou": "06730",
+      "method": "climate_velocity",
+      "wasserstein_m": 404341.26599351136,
+      "centroid_shift_m": 374670.62665118393,
+      "northern_half_mass_error": 0.1806553833160394,
+      "schoeners_d": 0.18555690624118304
+    },
+    {
+      "species": "Barred Owl",
+      "aou": "03680",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 84585.4199721248,
+      "centroid_shift_m": 39527.93527939351,
+      "northern_half_mass_error": 0.02861856908027549,
+      "schoeners_d": 0.47485254511456354
+    },
+    {
+      "species": "Barred Owl",
+      "aou": "03680",
+      "method": "persistence",
+      "wasserstein_m": 186152.75820000673,
+      "centroid_shift_m": 164101.5579209287,
+      "northern_half_mass_error": 0.12403827174691984,
+      "schoeners_d": 0.42788906059757514
+    },
+    {
+      "species": "Barred Owl",
+      "aou": "03680",
+      "method": "sdm_only",
+      "wasserstein_m": 161136.2713351578,
+      "centroid_shift_m": 140569.83183314884,
+      "northern_half_mass_error": 0.13176557252933208,
+      "schoeners_d": 0.42706238447078193
+    },
+    {
+      "species": "Barred Owl",
+      "aou": "03680",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 84913.74844795505,
+      "centroid_shift_m": 31298.54093119832,
+      "northern_half_mass_error": 0.02727970158374582,
+      "schoeners_d": 0.44683734107018314
+    },
+    {
+      "species": "Barred Owl",
+      "aou": "03680",
+      "method": "climate_velocity",
+      "wasserstein_m": 206353.67883478306,
+      "centroid_shift_m": 120882.31830695076,
+      "northern_half_mass_error": 0.10194040785975955,
+      "schoeners_d": 0.1505717948060793
+    },
+    {
+      "species": "Great Egret",
+      "aou": "01960",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 146896.82445571825,
+      "centroid_shift_m": 66906.136974022,
+      "northern_half_mass_error": 0.00753854660333475,
+      "schoeners_d": 0.5118892480623559
+    },
+    {
+      "species": "Great Egret",
+      "aou": "01960",
+      "method": "persistence",
+      "wasserstein_m": 101781.21959201632,
+      "centroid_shift_m": 70587.1205186256,
+      "northern_half_mass_error": 0.004101996887671461,
+      "schoeners_d": 0.5634064555208526
+    },
+    {
+      "species": "Great Egret",
+      "aou": "01960",
+      "method": "sdm_only",
+      "wasserstein_m": 268672.81791787664,
+      "centroid_shift_m": 168579.3771547196,
+      "northern_half_mass_error": 0.06590398055415796,
+      "schoeners_d": 0.3764985369425148
+    },
+    {
+      "species": "Great Egret",
+      "aou": "01960",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 182401.0110221809,
+      "centroid_shift_m": 89366.77533513246,
+      "northern_half_mass_error": 0.038853702536652546,
+      "schoeners_d": 0.4233496166396472
+    },
+    {
+      "species": "Great Egret",
+      "aou": "01960",
+      "method": "climate_velocity",
+      "wasserstein_m": 171911.94160627376,
+      "centroid_shift_m": 112938.94600360226,
+      "northern_half_mass_error": 0.03230751968429943,
+      "schoeners_d": 0.21149471842706125
+    },
+    {
+      "species": "Cedar Waxwing",
+      "aou": "06190",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 119024.94812868531,
+      "centroid_shift_m": 107353.65143873906,
+      "northern_half_mass_error": 0.01154378215429197,
+      "schoeners_d": 0.6722699090178246
+    },
+    {
+      "species": "Cedar Waxwing",
+      "aou": "06190",
+      "method": "persistence",
+      "wasserstein_m": 87916.06653620291,
+      "centroid_shift_m": 67793.90043845733,
+      "northern_half_mass_error": 0.005689346889710789,
+      "schoeners_d": 0.638321091808337
+    },
+    {
+      "species": "Cedar Waxwing",
+      "aou": "06190",
+      "method": "sdm_only",
+      "wasserstein_m": 241701.43922370765,
+      "centroid_shift_m": 233526.27845320458,
+      "northern_half_mass_error": 0.026322252612746344,
+      "schoeners_d": 0.6167233120460957
+    },
+    {
+      "species": "Cedar Waxwing",
+      "aou": "06190",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 147046.5115139173,
+      "centroid_shift_m": 136985.70531255135,
+      "northern_half_mass_error": 0.02145226663397204,
+      "schoeners_d": 0.650055270148725
+    },
+    {
+      "species": "Cedar Waxwing",
+      "aou": "06190",
+      "method": "climate_velocity",
+      "wasserstein_m": 231545.07732842249,
+      "centroid_shift_m": 185537.31304047653,
+      "northern_half_mass_error": 0.04147435626539131,
+      "schoeners_d": 0.22311710679642005
+    },
+    {
+      "species": "American Kestrel",
+      "aou": "03600",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 182932.07761337975,
+      "centroid_shift_m": 152834.15551118692,
+      "northern_half_mass_error": 0.1252753846061615,
+      "schoeners_d": 0.569948033344269
+    },
+    {
+      "species": "American Kestrel",
+      "aou": "03600",
+      "method": "persistence",
+      "wasserstein_m": 96153.78721096822,
+      "centroid_shift_m": 71365.75384010308,
+      "northern_half_mass_error": 0.06071969409531486,
+      "schoeners_d": 0.5820805452401585
+    },
+    {
+      "species": "American Kestrel",
+      "aou": "03600",
+      "method": "sdm_only",
+      "wasserstein_m": 253598.5125731191,
+      "centroid_shift_m": 173219.63935661945,
+      "northern_half_mass_error": 0.09981136770442778,
+      "schoeners_d": 0.4785127631491649
+    },
+    {
+      "species": "American Kestrel",
+      "aou": "03600",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 183066.9017089594,
+      "centroid_shift_m": 129966.7601476894,
+      "northern_half_mass_error": 0.09152185672823943,
+      "schoeners_d": 0.5234300760981638
+    },
+    {
+      "species": "American Kestrel",
+      "aou": "03600",
+      "method": "climate_velocity",
+      "wasserstein_m": 279059.1534498397,
+      "centroid_shift_m": 243744.34743875996,
+      "northern_half_mass_error": 0.18907936894672606,
+      "schoeners_d": 0.1898213126956272
+    },
+    {
+      "species": "Baltimore Oriole",
+      "aou": "05070",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 127046.70191022259,
+      "centroid_shift_m": 109291.99069612083,
+      "northern_half_mass_error": 0.0029840521361449435,
+      "schoeners_d": 0.6949452985864222
+    },
+    {
+      "species": "Baltimore Oriole",
+      "aou": "05070",
+      "method": "persistence",
+      "wasserstein_m": 71928.93121898072,
+      "centroid_shift_m": 51973.00367293404,
+      "northern_half_mass_error": 0.0021541940678091454,
+      "schoeners_d": 0.6953347359992907
+    },
+    {
+      "species": "Baltimore Oriole",
+      "aou": "05070",
+      "method": "sdm_only",
+      "wasserstein_m": 178167.79425998355,
+      "centroid_shift_m": 144125.35387845107,
+      "northern_half_mass_error": 0.026343184820333043,
+      "schoeners_d": 0.6017469693151246
+    },
+    {
+      "species": "Baltimore Oriole",
+      "aou": "05070",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 148202.29925863867,
+      "centroid_shift_m": 120714.68465972808,
+      "northern_half_mass_error": 0.024206343973391053,
+      "schoeners_d": 0.6369606942504596
+    },
+    {
+      "species": "Baltimore Oriole",
+      "aou": "05070",
+      "method": "climate_velocity",
+      "wasserstein_m": 199311.29980341706,
+      "centroid_shift_m": 170319.07752589844,
+      "northern_half_mass_error": 0.06369543871342442,
+      "schoeners_d": 0.2517979446147547
+    },
+    {
+      "species": "Wood Duck",
+      "aou": "01440",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 173050.98280808958,
+      "centroid_shift_m": 140411.9705684764,
+      "northern_half_mass_error": 0.06879760514515887,
+      "schoeners_d": 0.47690803533567183
+    },
+    {
+      "species": "Wood Duck",
+      "aou": "01440",
+      "method": "persistence",
+      "wasserstein_m": 141836.87866809656,
+      "centroid_shift_m": 100777.71473760431,
+      "northern_half_mass_error": 0.0706200758588178,
+      "schoeners_d": 0.4342567582937419
+    },
+    {
+      "species": "Wood Duck",
+      "aou": "01440",
+      "method": "sdm_only",
+      "wasserstein_m": 256160.0076084816,
+      "centroid_shift_m": 204774.72651847135,
+      "northern_half_mass_error": 0.09293988595340474,
+      "schoeners_d": 0.42669119508422193
+    },
+    {
+      "species": "Wood Duck",
+      "aou": "01440",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 195197.8055109114,
+      "centroid_shift_m": 155356.42322040867,
+      "northern_half_mass_error": 0.08039731777748949,
+      "schoeners_d": 0.4458109730084491
+    },
+    {
+      "species": "Wood Duck",
+      "aou": "01440",
+      "method": "climate_velocity",
+      "wasserstein_m": 160591.6006083656,
+      "centroid_shift_m": 114560.2236890225,
+      "northern_half_mass_error": 0.033044982858356775,
+      "schoeners_d": 0.18986351714795802
+    },
+    {
+      "species": "Song Sparrow",
+      "aou": "05810",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 57904.868483720136,
+      "centroid_shift_m": 42186.68004546726,
+      "northern_half_mass_error": 0.003945022350105298,
+      "schoeners_d": 0.8078774885534313
+    },
+    {
+      "species": "Song Sparrow",
+      "aou": "05810",
+      "method": "persistence",
+      "wasserstein_m": 63650.16999548828,
+      "centroid_shift_m": 41121.721276498785,
+      "northern_half_mass_error": 0.0063099127279340195,
+      "schoeners_d": 0.8089955929442176
+    },
+    {
+      "species": "Song Sparrow",
+      "aou": "05810",
+      "method": "sdm_only",
+      "wasserstein_m": 97986.51605268629,
+      "centroid_shift_m": 55648.01692779524,
+      "northern_half_mass_error": 0.018911505550867957,
+      "schoeners_d": 0.7281406285989991
+    },
+    {
+      "species": "Song Sparrow",
+      "aou": "05810",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 67683.83949862525,
+      "centroid_shift_m": 40759.384831315496,
+      "northern_half_mass_error": 0.02003402503603602,
+      "schoeners_d": 0.7573641047952009
+    },
+    {
+      "species": "Song Sparrow",
+      "aou": "05810",
+      "method": "climate_velocity",
+      "wasserstein_m": 183396.3546185329,
+      "centroid_shift_m": 147195.93724973116,
+      "northern_half_mass_error": 0.05772883938257678,
+      "schoeners_d": 0.25958271421292545
+    },
+    {
+      "species": "Blue Grosbeak",
+      "aou": "05970",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 96673.3808351331,
+      "centroid_shift_m": 86603.73787861562,
+      "northern_half_mass_error": 0.03443123865209671,
+      "schoeners_d": 0.701130332025705
+    },
+    {
+      "species": "Blue Grosbeak",
+      "aou": "05970",
+      "method": "persistence",
+      "wasserstein_m": 103628.30052934305,
+      "centroid_shift_m": 84136.23381841027,
+      "northern_half_mass_error": 0.07593880634177444,
+      "schoeners_d": 0.6731021002002378
+    },
+    {
+      "species": "Blue Grosbeak",
+      "aou": "05970",
+      "method": "sdm_only",
+      "wasserstein_m": 219702.5023834549,
+      "centroid_shift_m": 192493.2810500944,
+      "northern_half_mass_error": 0.09696171555898106,
+      "schoeners_d": 0.5731104953336694
+    },
+    {
+      "species": "Blue Grosbeak",
+      "aou": "05970",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 110840.06748978801,
+      "centroid_shift_m": 85963.53795285318,
+      "northern_half_mass_error": 0.022892830713072604,
+      "schoeners_d": 0.6317093359452556
+    },
+    {
+      "species": "Blue Grosbeak",
+      "aou": "05970",
+      "method": "climate_velocity",
+      "wasserstein_m": 248104.59889333142,
+      "centroid_shift_m": 187118.26293611745,
+      "northern_half_mass_error": 0.0974697901092382,
+      "schoeners_d": 0.2553904742324431
+    },
+    {
+      "species": "Mallard",
+      "aou": "01320",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 375336.8454961881,
+      "centroid_shift_m": 334541.26615367195,
+      "northern_half_mass_error": 0.03425667364999785,
+      "schoeners_d": 0.5245131126348761
+    },
+    {
+      "species": "Mallard",
+      "aou": "01320",
+      "method": "persistence",
+      "wasserstein_m": 89933.78765602232,
+      "centroid_shift_m": 35030.67087741499,
+      "northern_half_mass_error": 0.006092360268518671,
+      "schoeners_d": 0.6259764484739239
+    },
+    {
+      "species": "Mallard",
+      "aou": "01320",
+      "method": "sdm_only",
+      "wasserstein_m": 647544.8977327255,
+      "centroid_shift_m": 581586.1723254093,
+      "northern_half_mass_error": 0.1289698696481164,
+      "schoeners_d": 0.34542663966096243
+    },
+    {
+      "species": "Mallard",
+      "aou": "01320",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 464429.53061434615,
+      "centroid_shift_m": 419026.4664864545,
+      "northern_half_mass_error": 0.06539578164504478,
+      "schoeners_d": 0.4262064828194201
+    },
+    {
+      "species": "Mallard",
+      "aou": "01320",
+      "method": "climate_velocity",
+      "wasserstein_m": 115629.72024627253,
+      "centroid_shift_m": 83554.52759558264,
+      "northern_half_mass_error": 0.021351008579105546,
+      "schoeners_d": 0.33236683436714676
+    },
+    {
+      "species": "Hairy Woodpecker",
+      "aou": "03930",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 121518.45435687526,
+      "centroid_shift_m": 111389.6009705159,
+      "northern_half_mass_error": 0.053024109476776604,
+      "schoeners_d": 0.6158715604938849
+    },
+    {
+      "species": "Hairy Woodpecker",
+      "aou": "03930",
+      "method": "persistence",
+      "wasserstein_m": 103020.86706082638,
+      "centroid_shift_m": 90507.98017459526,
+      "northern_half_mass_error": 0.05164681257187298,
+      "schoeners_d": 0.550130031619392
+    },
+    {
+      "species": "Hairy Woodpecker",
+      "aou": "03930",
+      "method": "sdm_only",
+      "wasserstein_m": 201558.01093613717,
+      "centroid_shift_m": 193164.74531343445,
+      "northern_half_mass_error": 0.06391953739434886,
+      "schoeners_d": 0.5630782326881179
+    },
+    {
+      "species": "Hairy Woodpecker",
+      "aou": "03930",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 157944.1545878491,
+      "centroid_shift_m": 150966.57032033484,
+      "northern_half_mass_error": 0.06371001460190007,
+      "schoeners_d": 0.591689858009977
+    },
+    {
+      "species": "Hairy Woodpecker",
+      "aou": "03930",
+      "method": "climate_velocity",
+      "wasserstein_m": 162682.65904575252,
+      "centroid_shift_m": 94378.46495960228,
+      "northern_half_mass_error": 0.05744561120355596,
+      "schoeners_d": 0.22076331026354157
+    },
+    {
+      "species": "Ruby-throated Hummingbird",
+      "aou": "04280",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 85059.79625148841,
+      "centroid_shift_m": 37274.754729032284,
+      "northern_half_mass_error": 0.045546873338461524,
+      "schoeners_d": 0.624515887677944
+    },
+    {
+      "species": "Ruby-throated Hummingbird",
+      "aou": "04280",
+      "method": "persistence",
+      "wasserstein_m": 73821.94797968079,
+      "centroid_shift_m": 34774.889012221836,
+      "northern_half_mass_error": 0.017489501404949426,
+      "schoeners_d": 0.5736959109177441
+    },
+    {
+      "species": "Ruby-throated Hummingbird",
+      "aou": "04280",
+      "method": "sdm_only",
+      "wasserstein_m": 143960.1321526742,
+      "centroid_shift_m": 87870.3926823509,
+      "northern_half_mass_error": 0.12162833492215941,
+      "schoeners_d": 0.5746313005813835
+    },
+    {
+      "species": "Ruby-throated Hummingbird",
+      "aou": "04280",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 94851.45686522269,
+      "centroid_shift_m": 33938.21588176921,
+      "northern_half_mass_error": 0.06930136248179619,
+      "schoeners_d": 0.6025917620658057
+    },
+    {
+      "species": "Ruby-throated Hummingbird",
+      "aou": "04280",
+      "method": "climate_velocity",
+      "wasserstein_m": 250521.2104739053,
+      "centroid_shift_m": 220588.3125022685,
+      "northern_half_mass_error": 0.1921499667953257,
+      "schoeners_d": 0.24508179373993855
+    },
+    {
+      "species": "Eastern Phoebe",
+      "aou": "04560",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 171234.622762374,
+      "centroid_shift_m": 146453.43429972886,
+      "northern_half_mass_error": 0.13170150448996742,
+      "schoeners_d": 0.730390473317928
+    },
+    {
+      "species": "Eastern Phoebe",
+      "aou": "04560",
+      "method": "persistence",
+      "wasserstein_m": 111848.30802238072,
+      "centroid_shift_m": 86440.87582206055,
+      "northern_half_mass_error": 0.06569365042005959,
+      "schoeners_d": 0.7300859220521949
+    },
+    {
+      "species": "Eastern Phoebe",
+      "aou": "04560",
+      "method": "sdm_only",
+      "wasserstein_m": 268670.85831718246,
+      "centroid_shift_m": 221995.64020218595,
+      "northern_half_mass_error": 0.19336505992438047,
+      "schoeners_d": 0.6117204842150041
+    },
+    {
+      "species": "Eastern Phoebe",
+      "aou": "04560",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 184633.77834716652,
+      "centroid_shift_m": 146463.63836035633,
+      "northern_half_mass_error": 0.13547145692525986,
+      "schoeners_d": 0.6786720743975703
+    },
+    {
+      "species": "Eastern Phoebe",
+      "aou": "04560",
+      "method": "climate_velocity",
+      "wasserstein_m": 305735.8195987054,
+      "centroid_shift_m": 285068.5269024765,
+      "northern_half_mass_error": 0.23307451519784395,
+      "schoeners_d": 0.2397941115493254
+    },
+    {
+      "species": "Yellow-throated Vireo",
+      "aou": "06280",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 95933.23953243789,
+      "centroid_shift_m": 69919.81525464669,
+      "northern_half_mass_error": 0.01588836687202072,
+      "schoeners_d": 0.6188688419413815
+    },
+    {
+      "species": "Yellow-throated Vireo",
+      "aou": "06280",
+      "method": "persistence",
+      "wasserstein_m": 83270.0989242241,
+      "centroid_shift_m": 59154.544646043636,
+      "northern_half_mass_error": 0.016880886779152338,
+      "schoeners_d": 0.6150775955832709
+    },
+    {
+      "species": "Yellow-throated Vireo",
+      "aou": "06280",
+      "method": "sdm_only",
+      "wasserstein_m": 154616.20364400753,
+      "centroid_shift_m": 113341.21279957055,
+      "northern_half_mass_error": 0.08353651325783884,
+      "schoeners_d": 0.5021727297032055
+    },
+    {
+      "species": "Yellow-throated Vireo",
+      "aou": "06280",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 105575.28390340357,
+      "centroid_shift_m": 69530.5926635851,
+      "northern_half_mass_error": 0.04163982131635818,
+      "schoeners_d": 0.5389965819878945
+    },
+    {
+      "species": "Yellow-throated Vireo",
+      "aou": "06280",
+      "method": "climate_velocity",
+      "wasserstein_m": 266455.76055311295,
+      "centroid_shift_m": 241088.9352240985,
+      "northern_half_mass_error": 0.1264262716145924,
+      "schoeners_d": 0.21474478154862764
+    },
+    {
+      "species": "Northern Mockingbird",
+      "aou": "07030",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 119312.5700729934,
+      "centroid_shift_m": 109712.25455202033,
+      "northern_half_mass_error": 0.07616519731526164,
+      "schoeners_d": 0.791662298453573
+    },
+    {
+      "species": "Northern Mockingbird",
+      "aou": "07030",
+      "method": "persistence",
+      "wasserstein_m": 55322.65173369265,
+      "centroid_shift_m": 36103.36094577231,
+      "northern_half_mass_error": 0.0005814985925341881,
+      "schoeners_d": 0.8042969215826892
+    },
+    {
+      "species": "Northern Mockingbird",
+      "aou": "07030",
+      "method": "sdm_only",
+      "wasserstein_m": 347716.44156689325,
+      "centroid_shift_m": 341824.63195561187,
+      "northern_half_mass_error": 0.2669683122441508,
+      "schoeners_d": 0.6190464408602324
+    },
+    {
+      "species": "Northern Mockingbird",
+      "aou": "07030",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 177774.48540389855,
+      "centroid_shift_m": 168362.33550824434,
+      "northern_half_mass_error": 0.1266398152072511,
+      "schoeners_d": 0.7196152544243841
+    },
+    {
+      "species": "Northern Mockingbird",
+      "aou": "07030",
+      "method": "climate_velocity",
+      "wasserstein_m": 212197.3952604438,
+      "centroid_shift_m": 173268.25980800763,
+      "northern_half_mass_error": 0.10503353146354352,
+      "schoeners_d": 0.2855599882742901
+    },
+    {
+      "species": "Green Heron",
+      "aou": "02010",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 156203.64359221194,
+      "centroid_shift_m": 127374.82786268563,
+      "northern_half_mass_error": 0.04686548557705572,
+      "schoeners_d": 0.5732198053115626
+    },
+    {
+      "species": "Green Heron",
+      "aou": "02010",
+      "method": "persistence",
+      "wasserstein_m": 124071.77541566837,
+      "centroid_shift_m": 71363.53073755845,
+      "northern_half_mass_error": 0.04005458798440947,
+      "schoeners_d": 0.5631916120582342
+    },
+    {
+      "species": "Green Heron",
+      "aou": "02010",
+      "method": "sdm_only",
+      "wasserstein_m": 276779.0314700815,
+      "centroid_shift_m": 260622.9809915336,
+      "northern_half_mass_error": 0.155474009719897,
+      "schoeners_d": 0.4922902209142792
+    },
+    {
+      "species": "Green Heron",
+      "aou": "02010",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 186856.38647547804,
+      "centroid_shift_m": 163817.64970781968,
+      "northern_half_mass_error": 0.07956760427592124,
+      "schoeners_d": 0.527161593236758
+    },
+    {
+      "species": "Green Heron",
+      "aou": "02010",
+      "method": "climate_velocity",
+      "wasserstein_m": 207274.31939279468,
+      "centroid_shift_m": 178994.05583008123,
+      "northern_half_mass_error": 0.08760761023569918,
+      "schoeners_d": 0.20679867134293528
+    },
+    {
+      "species": "American Goldfinch",
+      "aou": "05290",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 119769.56219487527,
+      "centroid_shift_m": 116081.51081413857,
+      "northern_half_mass_error": 0.01165658638241518,
+      "schoeners_d": 0.7791898505570496
+    },
+    {
+      "species": "American Goldfinch",
+      "aou": "05290",
+      "method": "persistence",
+      "wasserstein_m": 95439.43246583767,
+      "centroid_shift_m": 91336.6116612243,
+      "northern_half_mass_error": 0.0033623396947686235,
+      "schoeners_d": 0.7554755509279527
+    },
+    {
+      "species": "American Goldfinch",
+      "aou": "05290",
+      "method": "sdm_only",
+      "wasserstein_m": 172031.4206312546,
+      "centroid_shift_m": 160853.1070169678,
+      "northern_half_mass_error": 0.04417032936556309,
+      "schoeners_d": 0.7241785769210016
+    },
+    {
+      "species": "American Goldfinch",
+      "aou": "05290",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 127855.60341589179,
+      "centroid_shift_m": 118301.08592456876,
+      "northern_half_mass_error": 0.026099547235852283,
+      "schoeners_d": 0.7489807966635693
+    },
+    {
+      "species": "American Goldfinch",
+      "aou": "05290",
+      "method": "climate_velocity",
+      "wasserstein_m": 216485.60505821445,
+      "centroid_shift_m": 183509.04969368115,
+      "northern_half_mass_error": 0.10735968579091315,
+      "schoeners_d": 0.25876347827910295
+    },
+    {
+      "species": "Common Grackle",
+      "aou": "05110",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 224187.28343481442,
+      "centroid_shift_m": 203473.06769878147,
+      "northern_half_mass_error": 0.1460772901835714,
+      "schoeners_d": 0.6768148214018207
+    },
+    {
+      "species": "Common Grackle",
+      "aou": "05110",
+      "method": "persistence",
+      "wasserstein_m": 199034.31490739787,
+      "centroid_shift_m": 193547.49171934204,
+      "northern_half_mass_error": 0.09651674805023469,
+      "schoeners_d": 0.6899062398395117
+    },
+    {
+      "species": "Common Grackle",
+      "aou": "05110",
+      "method": "sdm_only",
+      "wasserstein_m": 283631.18080709805,
+      "centroid_shift_m": 218410.16299655265,
+      "northern_half_mass_error": 0.2085725607756852,
+      "schoeners_d": 0.5622374361920831
+    },
+    {
+      "species": "Common Grackle",
+      "aou": "05110",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 240089.83034937203,
+      "centroid_shift_m": 204966.54842281915,
+      "northern_half_mass_error": 0.16276498854495358,
+      "schoeners_d": 0.6143041101850357
+    },
+    {
+      "species": "Common Grackle",
+      "aou": "05110",
+      "method": "climate_velocity",
+      "wasserstein_m": 234038.89934334232,
+      "centroid_shift_m": 188334.02609162807,
+      "northern_half_mass_error": 0.014107852781125696,
+      "schoeners_d": 0.26624103726249193
+    },
+    {
+      "species": "American Crow",
+      "aou": "04880",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 99620.458722723,
+      "centroid_shift_m": 90413.19887364155,
+      "northern_half_mass_error": 0.07682205511278684,
+      "schoeners_d": 0.7956427838975928
+    },
+    {
+      "species": "American Crow",
+      "aou": "04880",
+      "method": "persistence",
+      "wasserstein_m": 74089.47929450362,
+      "centroid_shift_m": 55905.18172746532,
+      "northern_half_mass_error": 0.04690946048494449,
+      "schoeners_d": 0.7898501295721101
+    },
+    {
+      "species": "American Crow",
+      "aou": "04880",
+      "method": "sdm_only",
+      "wasserstein_m": 154123.71170593906,
+      "centroid_shift_m": 146316.97391100635,
+      "northern_half_mass_error": 0.10556296100801366,
+      "schoeners_d": 0.7420541890117792
+    },
+    {
+      "species": "American Crow",
+      "aou": "04880",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 106164.06319711685,
+      "centroid_shift_m": 96196.02151177089,
+      "northern_half_mass_error": 0.08093615225905915,
+      "schoeners_d": 0.7654212641409014
+    },
+    {
+      "species": "American Crow",
+      "aou": "04880",
+      "method": "climate_velocity",
+      "wasserstein_m": 241794.97297982618,
+      "centroid_shift_m": 215920.54853389383,
+      "northern_half_mass_error": 0.16867395936357743,
+      "schoeners_d": 0.2798583262203387
+    },
+    {
+      "species": "Great Crested Flycatcher",
+      "aou": "04520",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 156807.1459242654,
+      "centroid_shift_m": 138516.73095347628,
+      "northern_half_mass_error": 0.1070259035138228,
+      "schoeners_d": 0.7223913040143981
+    },
+    {
+      "species": "Great Crested Flycatcher",
+      "aou": "04520",
+      "method": "persistence",
+      "wasserstein_m": 69448.81510118266,
+      "centroid_shift_m": 11180.655689214309,
+      "northern_half_mass_error": 0.0029036842271046304,
+      "schoeners_d": 0.7289809111895675
+    },
+    {
+      "species": "Great Crested Flycatcher",
+      "aou": "04520",
+      "method": "sdm_only",
+      "wasserstein_m": 299600.69223809766,
+      "centroid_shift_m": 273058.8777636768,
+      "northern_half_mass_error": 0.21865271140146203,
+      "schoeners_d": 0.6010834857592802
+    },
+    {
+      "species": "Great Crested Flycatcher",
+      "aou": "04520",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 187726.2534674167,
+      "centroid_shift_m": 167627.66565847484,
+      "northern_half_mass_error": 0.1302366281908932,
+      "schoeners_d": 0.6706820771602443
+    },
+    {
+      "species": "Great Crested Flycatcher",
+      "aou": "04520",
+      "method": "climate_velocity",
+      "wasserstein_m": 212985.46316669497,
+      "centroid_shift_m": 165439.81144881452,
+      "northern_half_mass_error": 0.0941856484992849,
+      "schoeners_d": 0.2589470958685761
+    },
+    {
+      "species": "Red-eyed Vireo",
+      "aou": "06240",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 123777.3824499031,
+      "centroid_shift_m": 116796.99678198314,
+      "northern_half_mass_error": 0.06978795933184412,
+      "schoeners_d": 0.7482014501163741
+    },
+    {
+      "species": "Red-eyed Vireo",
+      "aou": "06240",
+      "method": "persistence",
+      "wasserstein_m": 48696.83123920205,
+      "centroid_shift_m": 17749.056503216154,
+      "northern_half_mass_error": 0.011376992763868166,
+      "schoeners_d": 0.7906596891755419
+    },
+    {
+      "species": "Red-eyed Vireo",
+      "aou": "06240",
+      "method": "sdm_only",
+      "wasserstein_m": 320104.1286942107,
+      "centroid_shift_m": 303717.86809053505,
+      "northern_half_mass_error": 0.12356055648199404,
+      "schoeners_d": 0.5307486396672663
+    },
+    {
+      "species": "Red-eyed Vireo",
+      "aou": "06240",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 173459.75467754807,
+      "centroid_shift_m": 161982.43743827203,
+      "northern_half_mass_error": 0.07704582080653632,
+      "schoeners_d": 0.6266341972832893
+    },
+    {
+      "species": "Red-eyed Vireo",
+      "aou": "06240",
+      "method": "climate_velocity",
+      "wasserstein_m": 249265.30182505705,
+      "centroid_shift_m": 198408.8834644246,
+      "northern_half_mass_error": 0.08922927832261285,
+      "schoeners_d": 0.23473114832165232
+    },
+    {
+      "species": "Mourning Dove",
+      "aou": "03160",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 97596.00435234312,
+      "centroid_shift_m": 86715.51568795818,
+      "northern_half_mass_error": 0.0013338021482328655,
+      "schoeners_d": 0.8176160270233934
+    },
+    {
+      "species": "Mourning Dove",
+      "aou": "03160",
+      "method": "persistence",
+      "wasserstein_m": 50893.93062125921,
+      "centroid_shift_m": 30847.031555751957,
+      "northern_half_mass_error": 0.024296068423381723,
+      "schoeners_d": 0.8098576870518456
+    },
+    {
+      "species": "Mourning Dove",
+      "aou": "03160",
+      "method": "sdm_only",
+      "wasserstein_m": 172311.09595312667,
+      "centroid_shift_m": 163721.95979990446,
+      "northern_half_mass_error": 0.02683723349156486,
+      "schoeners_d": 0.744834751791734
+    },
+    {
+      "species": "Mourning Dove",
+      "aou": "03160",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 118592.27557255384,
+      "centroid_shift_m": 107015.5663131276,
+      "northern_half_mass_error": 0.0037741438870647626,
+      "schoeners_d": 0.7817094014119664
+    },
+    {
+      "species": "Mourning Dove",
+      "aou": "03160",
+      "method": "climate_velocity",
+      "wasserstein_m": 185608.3646760177,
+      "centroid_shift_m": 144218.10193374488,
+      "northern_half_mass_error": 0.06930127653531126,
+      "schoeners_d": 0.3072572364401387
+    },
+    {
+      "species": "Downy Woodpecker",
+      "aou": "03940",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 106338.55953256275,
+      "centroid_shift_m": 99347.2857515484,
+      "northern_half_mass_error": 0.03134969716310437,
+      "schoeners_d": 0.7306159031940523
+    },
+    {
+      "species": "Downy Woodpecker",
+      "aou": "03940",
+      "method": "persistence",
+      "wasserstein_m": 65085.056611975066,
+      "centroid_shift_m": 48527.80749090797,
+      "northern_half_mass_error": 0.012234292719243145,
+      "schoeners_d": 0.6913721304090749
+    },
+    {
+      "species": "Downy Woodpecker",
+      "aou": "03940",
+      "method": "sdm_only",
+      "wasserstein_m": 204857.11114683113,
+      "centroid_shift_m": 197461.39536847774,
+      "northern_half_mass_error": 0.0866740134152128,
+      "schoeners_d": 0.6796512983755649
+    },
+    {
+      "species": "Downy Woodpecker",
+      "aou": "03940",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 123625.17063456238,
+      "centroid_shift_m": 116980.99383549334,
+      "northern_half_mass_error": 0.042476225885443364,
+      "schoeners_d": 0.7116566457406821
+    },
+    {
+      "species": "Downy Woodpecker",
+      "aou": "03940",
+      "method": "climate_velocity",
+      "wasserstein_m": 208587.93409836537,
+      "centroid_shift_m": 177686.1477740869,
+      "northern_half_mass_error": 0.12935040234678535,
+      "schoeners_d": 0.2536303248306516
+    },
+    {
+      "species": "Chimney Swift",
+      "aou": "04230",
+      "method": "learned_cost_ot",
+      "wasserstein_m": 176430.90358481763,
+      "centroid_shift_m": 166269.81936939317,
+      "northern_half_mass_error": 0.03268701952813374,
+      "schoeners_d": 0.6772259544084019
+    },
+    {
+      "species": "Chimney Swift",
+      "aou": "04230",
+      "method": "persistence",
+      "wasserstein_m": 171956.3856825118,
+      "centroid_shift_m": 155568.52532315647,
+      "northern_half_mass_error": 0.10929269045158524,
+      "schoeners_d": 0.6640120523805602
+    },
+    {
+      "species": "Chimney Swift",
+      "aou": "04230",
+      "method": "sdm_only",
+      "wasserstein_m": 281319.1236728969,
+      "centroid_shift_m": 259618.98836017927,
+      "northern_half_mass_error": 0.042014727044692834,
+      "schoeners_d": 0.5826109042200063
+    },
+    {
+      "species": "Chimney Swift",
+      "aou": "04230",
+      "method": "uniform_cost_ot",
+      "wasserstein_m": 190484.8418330489,
+      "centroid_shift_m": 176725.12474626437,
+      "northern_half_mass_error": 0.017209500024212787,
+      "schoeners_d": 0.6319668658237734
+    },
+    {
+      "species": "Chimney Swift",
+      "aou": "04230",
+      "method": "climate_velocity",
+      "wasserstein_m": 176529.3275818235,
+      "centroid_shift_m": 85014.19062738991,
+      "northern_half_mass_error": 0.016599753908589643,
+      "schoeners_d": 0.2457961355503957
+    }
+  ]
+}

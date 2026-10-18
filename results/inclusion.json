@@ -1,0 +1,816 @@
+{
+  "criterion": "at least 150 occupied cells in both windows, top 100 by occupied cells",
+  "force_included": [
+    "06220"
+  ],
+  "species": [
+    {
+      "aou": "03160",
+      "name": "Mourning Dove",
+      "slug": "mourning_dove",
+      "n_occupied_early": 1089,
+      "n_occupied_late": 1091,
+      "min_occupied": 1089
+    },
+    {
+      "aou": "04980",
+      "name": "Red-winged Blackbird",
+      "slug": "red_winged_blackbird",
+      "n_occupied_early": 1078,
+      "n_occupied_late": 1060,
+      "min_occupied": 1060
+    },
+    {
+      "aou": "04880",
+      "name": "American Crow",
+      "slug": "american_crow",
+      "n_occupied_early": 1065,
+      "n_occupied_late": 1054,
+      "min_occupied": 1054
+    },
+    {
+      "aou": "04950",
+      "name": "Brown-headed Cowbird",
+      "slug": "brown_headed_cowbird",
+      "n_occupied_early": 1071,
+      "n_occupied_late": 1052,
+      "min_occupied": 1052
+    },
+    {
+      "aou": "06130",
+      "name": "Barn Swallow",
+      "slug": "barn_swallow",
+      "n_occupied_early": 1053,
+      "n_occupied_late": 1048,
+      "min_occupied": 1048
+    },
+    {
+      "aou": "05110",
+      "name": "Common Grackle",
+      "slug": "common_grackle",
+      "n_occupied_early": 1066,
+      "n_occupied_late": 1042,
+      "min_occupied": 1042
+    },
+    {
+      "aou": "04770",
+      "name": "Blue Jay",
+      "slug": "blue_jay",
+      "n_occupied_early": 1053,
+      "n_occupied_late": 1035,
+      "min_occupied": 1035
+    },
+    {
+      "aou": "04930",
+      "name": "European Starling",
+      "slug": "european_starling",
+      "n_occupied_early": 1065,
+      "n_occupied_late": 1026,
+      "min_occupied": 1026
+    },
+    {
+      "aou": "07660",
+      "name": "Eastern Bluebird",
+      "slug": "eastern_bluebird",
+      "n_occupied_early": 987,
+      "n_occupied_late": 983,
+      "min_occupied": 983
+    },
+    {
+      "aou": "05930",
+      "name": "Northern Cardinal",
+      "slug": "northern_cardinal",
+      "n_occupied_early": 980,
+      "n_occupied_late": 1003,
+      "min_occupied": 980
+    },
+    {
+      "aou": "04520",
+      "name": "Great Crested Flycatcher",
+      "slug": "great_crested_flycatcher",
+      "n_occupied_early": 975,
+      "n_occupied_late": 989,
+      "min_occupied": 975
+    },
+    {
+      "aou": "02730",
+      "name": "Killdeer",
+      "slug": "killdeer",
+      "n_occupied_early": 1040,
+      "n_occupied_late": 973,
+      "min_occupied": 973
+    },
+    {
+      "aou": "03940",
+      "name": "Downy Woodpecker",
+      "slug": "downy_woodpecker",
+      "n_occupied_early": 992,
+      "n_occupied_late": 971,
+      "min_occupied": 971
+    },
+    {
+      "aou": "06810",
+      "name": "Common Yellowthroat",
+      "slug": "common_yellowthroat",
+      "n_occupied_early": 1000,
+      "n_occupied_late": 969,
+      "min_occupied": 969
+    },
+    {
+      "aou": "04440",
+      "name": "Eastern Kingbird",
+      "slug": "eastern_kingbird",
+      "n_occupied_early": 1016,
+      "n_occupied_late": 956,
+      "min_occupied": 956
+    },
+    {
+      "aou": "06882",
+      "name": "House Sparrow",
+      "slug": "house_sparrow",
+      "n_occupied_early": 1011,
+      "n_occupied_late": 945,
+      "min_occupied": 945
+    },
+    {
+      "aou": "03370",
+      "name": "Red-tailed Hawk",
+      "slug": "red_tailed_hawk",
+      "n_occupied_early": 950,
+      "n_occupied_late": 944,
+      "min_occupied": 944
+    },
+    {
+      "aou": "05980",
+      "name": "Indigo Bunting",
+      "slug": "indigo_bunting",
+      "n_occupied_early": 957,
+      "n_occupied_late": 935,
+      "min_occupied": 935
+    },
+    {
+      "aou": "07050",
+      "name": "Brown Thrasher",
+      "slug": "brown_thrasher",
+      "n_occupied_early": 958,
+      "n_occupied_late": 921,
+      "min_occupied": 921
+    },
+    {
+      "aou": "06240",
+      "name": "Red-eyed Vireo",
+      "slug": "red_eyed_vireo",
+      "n_occupied_early": 917,
+      "n_occupied_late": 940,
+      "min_occupied": 917
+    },
+    {
+      "aou": "04230",
+      "name": "Chimney Swift",
+      "slug": "chimney_swift",
+      "n_occupied_early": 983,
+      "n_occupied_late": 915,
+      "min_occupied": 915
+    },
+    {
+      "aou": "01940",
+      "name": "Great Blue Heron",
+      "slug": "great_blue_heron",
+      "n_occupied_early": 951,
+      "n_occupied_late": 911,
+      "min_occupied": 911
+    },
+    {
+      "aou": "07610",
+      "name": "American Robin",
+      "slug": "american_robin",
+      "n_occupied_early": 933,
+      "n_occupied_late": 909,
+      "min_occupied": 909
+    },
+    {
+      "aou": "03250",
+      "name": "Turkey Vulture",
+      "slug": "turkey_vulture",
+      "n_occupied_early": 908,
+      "n_occupied_late": 1016,
+      "min_occupied": 908
+    },
+    {
+      "aou": "04610",
+      "name": "Eastern Wood-Pewee",
+      "slug": "eastern_wood_pewee",
+      "n_occupied_early": 904,
+      "n_occupied_late": 891,
+      "min_occupied": 891
+    },
+    {
+      "aou": "04090",
+      "name": "Red-bellied Woodpecker",
+      "slug": "red_bellied_woodpecker",
+      "n_occupied_early": 884,
+      "n_occupied_late": 942,
+      "min_occupied": 884
+    },
+    {
+      "aou": "03870",
+      "name": "Yellow-billed Cuckoo",
+      "slug": "yellow_billed_cuckoo",
+      "n_occupied_early": 878,
+      "n_occupied_late": 879,
+      "min_occupied": 878
+    },
+    {
+      "aou": "05600",
+      "name": "Chipping Sparrow",
+      "slug": "chipping_sparrow",
+      "n_occupied_early": 858,
+      "n_occupied_late": 877,
+      "min_occupied": 858
+    },
+    {
+      "aou": "04120",
+      "name": "(Yellow-shafted Flicker) Northern Flicker",
+      "slug": "(yellow_shafted_flicker)_northern_flicker",
+      "n_occupied_early": 943,
+      "n_occupied_late": 851,
+      "min_occupied": 851
+    },
+    {
+      "aou": "05010",
+      "name": "Eastern Meadowlark",
+      "slug": "eastern_meadowlark",
+      "n_occupied_early": 954,
+      "n_occupied_late": 845,
+      "min_occupied": 845
+    },
+    {
+      "aou": "04560",
+      "name": "Eastern Phoebe",
+      "slug": "eastern_phoebe",
+      "n_occupied_early": 843,
+      "n_occupied_late": 863,
+      "min_occupied": 843
+    },
+    {
+      "aou": "05290",
+      "name": "American Goldfinch",
+      "slug": "american_goldfinch",
+      "n_occupied_early": 839,
+      "n_occupied_late": 830,
+      "min_occupied": 830
+    },
+    {
+      "aou": "07310",
+      "name": "Tufted Titmouse",
+      "slug": "tufted_titmouse",
+      "n_occupied_early": 824,
+      "n_occupied_late": 829,
+      "min_occupied": 824
+    },
+    {
+      "aou": "07040",
+      "name": "Gray Catbird",
+      "slug": "gray_catbird",
+      "n_occupied_early": 850,
+      "n_occupied_late": 810,
+      "min_occupied": 810
+    },
+    {
+      "aou": "05190",
+      "name": "House Finch",
+      "slug": "house_finch",
+      "n_occupied_early": 801,
+      "n_occupied_late": 812,
+      "min_occupied": 801
+    },
+    {
+      "aou": "07030",
+      "name": "Northern Mockingbird",
+      "slug": "northern_mockingbird",
+      "n_occupied_early": 814,
+      "n_occupied_late": 798,
+      "min_occupied": 798
+    },
+    {
+      "aou": "05870",
+      "name": "Eastern Towhee",
+      "slug": "eastern_towhee",
+      "n_occupied_early": 782,
+      "n_occupied_late": 773,
+      "min_occupied": 773
+    },
+    {
+      "aou": "07550",
+      "name": "Wood Thrush",
+      "slug": "wood_thrush",
+      "n_occupied_early": 764,
+      "n_occupied_late": 757,
+      "min_occupied": 757
+    },
+    {
+      "aou": "05060",
+      "name": "Orchard Oriole",
+      "slug": "orchard_oriole",
+      "n_occupied_early": 753,
+      "n_occupied_late": 783,
+      "min_occupied": 753
+    },
+    {
+      "aou": "05630",
+      "name": "Field Sparrow",
+      "slug": "field_sparrow",
+      "n_occupied_early": 789,
+      "n_occupied_late": 753,
+      "min_occupied": 753
+    },
+    {
+      "aou": "03131",
+      "name": "Rock Pigeon",
+      "slug": "rock_pigeon",
+      "n_occupied_early": 855,
+      "n_occupied_late": 749,
+      "min_occupied": 749
+    },
+    {
+      "aou": "07270",
+      "name": "White-breasted Nuthatch",
+      "slug": "white_breasted_nuthatch",
+      "n_occupied_early": 739,
+      "n_occupied_late": 758,
+      "min_occupied": 739
+    },
+    {
+      "aou": "04280",
+      "name": "Ruby-throated Hummingbird",
+      "slug": "ruby_throated_hummingbird",
+      "n_occupied_early": 740,
+      "n_occupied_late": 738,
+      "min_occupied": 738
+    },
+    {
+      "aou": "07180",
+      "name": "Carolina Wren",
+      "slug": "carolina_wren",
+      "n_occupied_early": 737,
+      "n_occupied_late": 790,
+      "min_occupied": 737
+    },
+    {
+      "aou": "07510",
+      "name": "Blue-gray Gnatcatcher",
+      "slug": "blue_gray_gnatcatcher",
+      "n_occupied_early": 728,
+      "n_occupied_late": 755,
+      "min_occupied": 728
+    },
+    {
+      "aou": "04050",
+      "name": "Pileated Woodpecker",
+      "slug": "pileated_woodpecker",
+      "n_occupied_early": 718,
+      "n_occupied_late": 822,
+      "min_occupied": 718
+    },
+    {
+      "aou": "06110",
+      "name": "Purple Martin",
+      "slug": "purple_martin",
+      "n_occupied_early": 736,
+      "n_occupied_late": 711,
+      "min_occupied": 711
+    },
+    {
+      "aou": "06170",
+      "name": "Northern Rough-winged Swallow",
+      "slug": "northern_rough_winged_swallow",
+      "n_occupied_early": 769,
+      "n_occupied_late": 681,
+      "min_occupied": 681
+    },
+    {
+      "aou": "07210",
+      "name": "Northern House Wren",
+      "slug": "northern_house_wren",
+      "n_occupied_early": 682,
+      "n_occupied_late": 670,
+      "min_occupied": 670
+    },
+    {
+      "aou": "06280",
+      "name": "Yellow-throated Vireo",
+      "slug": "yellow_throated_vireo",
+      "n_occupied_early": 667,
+      "n_occupied_late": 682,
+      "min_occupied": 667
+    },
+    {
+      "aou": "02010",
+      "name": "Green Heron",
+      "slug": "green_heron",
+      "n_occupied_early": 786,
+      "n_occupied_late": 654,
+      "min_occupied": 654
+    },
+    {
+      "aou": "03930",
+      "name": "Hairy Woodpecker",
+      "slug": "hairy_woodpecker",
+      "n_occupied_early": 683,
+      "n_occupied_late": 652,
+      "min_occupied": 652
+    },
+    {
+      "aou": "05810",
+      "name": "Song Sparrow",
+      "slug": "song_sparrow",
+      "n_occupied_early": 661,
+      "n_occupied_late": 651,
+      "min_occupied": 651
+    },
+    {
+      "aou": "05070",
+      "name": "Baltimore Oriole",
+      "slug": "baltimore_oriole",
+      "n_occupied_early": 702,
+      "n_occupied_late": 647,
+      "min_occupied": 647
+    },
+    {
+      "aou": "04060",
+      "name": "Red-headed Woodpecker",
+      "slug": "red_headed_woodpecker",
+      "n_occupied_early": 643,
+      "n_occupied_late": 644,
+      "min_occupied": 643
+    },
+    {
+      "aou": "03100",
+      "name": "Wild Turkey",
+      "slug": "wild_turkey",
+      "n_occupied_early": 640,
+      "n_occupied_late": 793,
+      "min_occupied": 640
+    },
+    {
+      "aou": "01720",
+      "name": "Canada Goose",
+      "slug": "canada_goose",
+      "n_occupied_early": 631,
+      "n_occupied_late": 750,
+      "min_occupied": 631
+    },
+    {
+      "aou": "06190",
+      "name": "Cedar Waxwing",
+      "slug": "cedar_waxwing",
+      "n_occupied_early": 654,
+      "n_occupied_late": 619,
+      "min_occupied": 619
+    },
+    {
+      "aou": "02890",
+      "name": "Northern Bobwhite",
+      "slug": "northern_bobwhite",
+      "n_occupied_early": 797,
+      "n_occupied_late": 608,
+      "min_occupied": 608
+    },
+    {
+      "aou": "01440",
+      "name": "Wood Duck",
+      "slug": "wood_duck",
+      "n_occupied_early": 634,
+      "n_occupied_late": 599,
+      "min_occupied": 599
+    },
+    {
+      "aou": "06310",
+      "name": "White-eyed Vireo",
+      "slug": "white_eyed_vireo",
+      "n_occupied_early": 597,
+      "n_occupied_late": 615,
+      "min_occupied": 597
+    },
+    {
+      "aou": "07360",
+      "name": "Carolina Chickadee",
+      "slug": "carolina_chickadee",
+      "n_occupied_early": 586,
+      "n_occupied_late": 588,
+      "min_occupied": 586
+    },
+    {
+      "aou": "05970",
+      "name": "Blue Grosbeak",
+      "slug": "blue_grosbeak",
+      "n_occupied_early": 581,
+      "n_occupied_late": 630,
+      "min_occupied": 581
+    },
+    {
+      "aou": "06270",
+      "name": "Warbling Vireo",
+      "slug": "warbling_vireo",
+      "n_occupied_early": 580,
+      "n_occupied_late": 568,
+      "min_occupied": 568
+    },
+    {
+      "aou": "01320",
+      "name": "Mallard",
+      "slug": "mallard",
+      "n_occupied_early": 615,
+      "n_occupied_late": 567,
+      "min_occupied": 567
+    },
+    {
+      "aou": "06480",
+      "name": "Northern Parula",
+      "slug": "northern_parula",
+      "n_occupied_early": 565,
+      "n_occupied_late": 610,
+      "min_occupied": 565
+    },
+    {
+      "aou": "06140",
+      "name": "Tree Swallow",
+      "slug": "tree_swallow",
+      "n_occupied_early": 558,
+      "n_occupied_late": 623,
+      "min_occupied": 558
+    },
+    {
+      "aou": "06520",
+      "name": "Yellow Warbler",
+      "slug": "yellow_warbler",
+      "n_occupied_early": 600,
+      "n_occupied_late": 548,
+      "min_occupied": 548
+    },
+    {
+      "aou": "06830",
+      "name": "Yellow-breasted Chat",
+      "slug": "yellow_breasted_chat",
+      "n_occupied_early": 557,
+      "n_occupied_late": 539,
+      "min_occupied": 539
+    },
+    {
+      "aou": "06080",
+      "name": "Scarlet Tanager",
+      "slug": "scarlet_tanager",
+      "n_occupied_early": 543,
+      "n_occupied_late": 526,
+      "min_occupied": 526
+    },
+    {
+      "aou": "03600",
+      "name": "American Kestrel",
+      "slug": "american_kestrel",
+      "n_occupied_early": 605,
+      "n_occupied_late": 523,
+      "min_occupied": 523
+    },
+    {
+      "aou": "03900",
+      "name": "Belted Kingfisher",
+      "slug": "belted_kingfisher",
+      "n_occupied_early": 695,
+      "n_occupied_late": 522,
+      "min_occupied": 522
+    },
+    {
+      "aou": "06040",
+      "name": "Dickcissel",
+      "slug": "dickcissel",
+      "n_occupied_early": 517,
+      "n_occupied_late": 579,
+      "min_occupied": 517
+    },
+    {
+      "aou": "03390",
+      "name": "Red-shouldered Hawk",
+      "slug": "red_shouldered_hawk",
+      "n_occupied_early": 513,
+      "n_occupied_late": 657,
+      "min_occupied": 513
+    },
+    {
+      "aou": "06120",
+      "name": "Cliff Swallow",
+      "slug": "cliff_swallow",
+      "n_occupied_early": 509,
+      "n_occupied_late": 644,
+      "min_occupied": 509
+    },
+    {
+      "aou": "06710",
+      "name": "Pine Warbler",
+      "slug": "pine_warbler",
+      "n_occupied_early": 496,
+      "n_occupied_late": 542,
+      "min_occupied": 496
+    },
+    {
+      "aou": "06100",
+      "name": "Summer Tanager",
+      "slug": "summer_tanager",
+      "n_occupied_early": 490,
+      "n_occupied_late": 519,
+      "min_occupied": 490
+    },
+    {
+      "aou": "04650",
+      "name": "Acadian Flycatcher",
+      "slug": "acadian_flycatcher",
+      "n_occupied_early": 489,
+      "n_occupied_late": 509,
+      "min_occupied": 489
+    },
+    {
+      "aou": "05460",
+      "name": "Grasshopper Sparrow",
+      "slug": "grasshopper_sparrow",
+      "n_occupied_early": 597,
+      "n_occupied_late": 477,
+      "min_occupied": 477
+    },
+    {
+      "aou": "06740",
+      "name": "Ovenbird",
+      "slug": "ovenbird",
+      "n_occupied_early": 492,
+      "n_occupied_late": 475,
+      "min_occupied": 475
+    },
+    {
+      "aou": "04740",
+      "name": "Horned Lark",
+      "slug": "horned_lark",
+      "n_occupied_early": 499,
+      "n_occupied_late": 458,
+      "min_occupied": 458
+    },
+    {
+      "aou": "05950",
+      "name": "Rose-breasted Grosbeak",
+      "slug": "rose_breasted_grosbeak",
+      "n_occupied_early": 465,
+      "n_occupied_late": 448,
+      "min_occupied": 448
+    },
+    {
+      "aou": "06870",
+      "name": "American Redstart",
+      "slug": "american_redstart",
+      "n_occupied_early": 424,
+      "n_occupied_late": 451,
+      "min_occupied": 424
+    },
+    {
+      "aou": "07350",
+      "name": "Black-capped Chickadee",
+      "slug": "black_capped_chickadee",
+      "n_occupied_early": 452,
+      "n_occupied_late": 417,
+      "min_occupied": 417
+    },
+    {
+      "aou": "03260",
+      "name": "Black Vulture",
+      "slug": "black_vulture",
+      "n_occupied_early": 413,
+      "n_occupied_late": 505,
+      "min_occupied": 413
+    },
+    {
+      "aou": "03680",
+      "name": "Barred Owl",
+      "slug": "barred_owl",
+      "n_occupied_early": 412,
+      "n_occupied_late": 462,
+      "min_occupied": 412
+    },
+    {
+      "aou": "06360",
+      "name": "Black-and-white Warbler",
+      "slug": "black_and_white_warbler",
+      "n_occupied_early": 424,
+      "n_occupied_late": 404,
+      "min_occupied": 404
+    },
+    {
+      "aou": "03330",
+      "name": "Cooper's Hawk",
+      "slug": "coopers_hawk",
+      "n_occupied_early": 387,
+      "n_occupied_late": 453,
+      "min_occupied": 387
+    },
+    {
+      "aou": "06730",
+      "name": "Prairie Warbler",
+      "slug": "prairie_warbler",
+      "n_occupied_early": 419,
+      "n_occupied_late": 387,
+      "min_occupied": 387
+    },
+    {
+      "aou": "01960",
+      "name": "Great Egret",
+      "slug": "great_egret",
+      "n_occupied_early": 365,
+      "n_occupied_late": 384,
+      "min_occupied": 365
+    },
+    {
+      "aou": "06840",
+      "name": "Hooded Warbler",
+      "slug": "hooded_warbler",
+      "n_occupied_early": 359,
+      "n_occupied_late": 390,
+      "min_occupied": 359
+    },
+    {
+      "aou": "04660",
+      "name": "Willow Flycatcher",
+      "slug": "willow_flycatcher",
+      "n_occupied_early": 388,
+      "n_occupied_late": 355,
+      "min_occupied": 355
+    },
+    {
+      "aou": "04940",
+      "name": "Bobolink",
+      "slug": "bobolink",
+      "n_occupied_early": 404,
+      "n_occupied_late": 355,
+      "min_occupied": 355
+    },
+    {
+      "aou": "03430",
+      "name": "Broad-winged Hawk",
+      "slug": "broad_winged_hawk",
+      "n_occupied_early": 354,
+      "n_occupied_late": 347,
+      "min_occupied": 347
+    },
+    {
+      "aou": "03750",
+      "name": "Great Horned Owl",
+      "slug": "great_horned_owl",
+      "n_occupied_early": 473,
+      "n_occupied_late": 341,
+      "min_occupied": 341
+    },
+    {
+      "aou": "05420",
+      "name": "Savannah Sparrow",
+      "slug": "savannah_sparrow",
+      "n_occupied_early": 382,
+      "n_occupied_late": 334,
+      "min_occupied": 334
+    },
+    {
+      "aou": "04200",
+      "name": "Common Nighthawk",
+      "slug": "common_nighthawk",
+      "n_occupied_early": 387,
+      "n_occupied_late": 325,
+      "min_occupied": 325
+    },
+    {
+      "aou": "06770",
+      "name": "Kentucky Warbler",
+      "slug": "kentucky_warbler",
+      "n_occupied_early": 376,
+      "n_occupied_late": 324,
+      "min_occupied": 324
+    },
+    {
+      "aou": "06760",
+      "name": "Louisiana Waterthrush",
+      "slug": "louisiana_waterthrush",
+      "n_occupied_early": 316,
+      "n_occupied_late": 320,
+      "min_occupied": 316
+    },
+    {
+      "aou": "04900",
+      "name": "Fish Crow",
+      "slug": "fish_crow",
+      "n_occupied_early": 314,
+      "n_occupied_late": 392,
+      "min_occupied": 314
+    },
+    {
+      "aou": "06220",
+      "name": "Loggerhead Shrike",
+      "slug": "loggerhead_shrike",
+      "n_occupied_early": 442,
+      "n_occupied_late": 273,
+      "min_occupied": 273
+    }
+  ]
+}
