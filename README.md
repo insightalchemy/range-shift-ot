@@ -4,21 +4,6 @@ Ishan Nagpal and Ziheng Sun
 
 Conservation planning relies on resistance surfaces that are usually assumed from expert opinion or geographic distance. This repository learns an interpretable resistance surface from observed bird range shifts. For each species, an unbalanced optimal-transport model moves the early-period distribution (Breeding Bird Survey, 1997-2002) toward a climate-feasible distribution from a species distribution model, under a cost that is a weighted sum of geographic distance, climate dissimilarity and elevation difference. The weights are fit by backpropagating a Sinkhorn-divergence loss against the later observed distribution (2017-2022) through the Sinkhorn iterations, and are evaluated on held-out species against persistence, climate-only, climate-velocity and uniform-cost baselines.
 
-Website: 
-WEBSITE_URL
-
-Paper: [arXiv](https://arxiv.org/abs/ARXIV_ID)
-
-```bibtex
-@article{nagpal2026rangeshift,
-  title   = {Learning Ecological Cost Surfaces of Climate-Driven Range Shifts via Inverse Optimal Transport},
-  author  = {Nagpal, Ishan and Sun, Ziheng},
-  year    = {2026},
-  journal = {arXiv preprint},
-  eprint  = {ARXIV_ID}
-}
-```
-
 ## Setup
 
 Python 3.11.
